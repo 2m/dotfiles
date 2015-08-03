@@ -13,7 +13,7 @@ function sbtOpts() {
   SBT_OPTS="$SBT_OPTS -XX:+UseCompressedOops"         # Allow 32bit references in 64bit VM
   SBT_OPTS="$SBT_OPTS -Djava.security.egd=file:/dev/urandom" # Do not block on low entropy
 
-  if [[ $JAVA_VERSION == "6" ]]; then
+  if [ "$JAVA_VERSION" -lt "8" ]; then
     SBT_OPTS="$SBT_OPTS -XX:MaxPermSize=512M"
   else
     SBT_OPTS="$SBT_OPTS -XX:MetaspaceSize=384M"         # Set JDK 8 metaspace
