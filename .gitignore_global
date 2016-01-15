@@ -16,7 +16,6 @@ local.properties
 .sbt/cache
 .target
 tmp
-sbt
 *.elf
 *.lst
 *.o
@@ -31,3 +30,7 @@ RUNNING_PID
 *.egg-info
 ENV
 dist
+bin
+application.log
+*.class
+*.sjsir
