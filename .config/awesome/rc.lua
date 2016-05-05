@@ -41,7 +41,7 @@ end
 
 -- {{{ Autorun
 autorun_apps = {
-  "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 143.86",
+  "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 119.88",
   "xrandr --output HDMI-0 --mode 1920x1080 --rotate left --right-of DisplayPort-0",
 
   -- Disable default Caps Lock command4
