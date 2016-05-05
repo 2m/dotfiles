@@ -93,16 +93,23 @@ end
 -- }}}
 
 -- {{{ Tags
--- Define a tag table which will hold all screen tags.
-tags = {
-  names  = { 1, 2, 3, "term", "bg",
-             6, "web", "lightbend", 9 },
-  layout = { layouts[1], layouts[1], layouts[1], layouts[8], layouts[8],
-             layouts[1], layouts[1], layouts[1], layouts[1] }
+tag_layout = {
+  {
+    names  = { 1, 2, 3, "term", "bg",
+               6, "web", "lightbend", 9 },
+    layout = { layouts[1], layouts[1], layouts[1], layouts[8], layouts[8],
+               layouts[1], layouts[1], layouts[1], layouts[1] }
+  },
+  {
+    names  = { 1, 2, 3 },
+    layout = { layouts[5], layouts[5], layouts[5] }
+  }
 }
+-- Define a tag table which will hold all screen tags.
+tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag(tags.names, s, tags.layout)
+    tags[s] = awful.tag(tag_layout[s].names, s, tag_layout[s].layout)
 end
 -- }}}
 
