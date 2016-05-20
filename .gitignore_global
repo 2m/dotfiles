@@ -10,6 +10,7 @@
 .classpath
 .project
 .tmpBin
+.tox
 target
 journal
 local.properties
@@ -34,3 +35,4 @@ bin
 application.log
 *.class
 *.sjsir
+*.pyc
