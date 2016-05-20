@@ -6,5 +6,6 @@ EclipseKeys.preTasks := Seq(compile in Compile)
 
 EclipseKeys.executionEnvironment := Some(EclipseExecutionEnvironment.JavaSE18)
 EclipseKeys.withSource := true
+EclipseKeys.withJavadoc := true
 
 EclipseKeys.skipParents in ThisBuild := false
