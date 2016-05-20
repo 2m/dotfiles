@@ -39,19 +39,6 @@ do
 end
 -- }}}
 
--- {{{ Autorun
-autorun_apps = {
-  "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 119.88",
-  "xrandr --output HDMI-0 --mode 1920x1080 --rotate left --right-of DisplayPort-0",
-
-  -- Disable default Caps Lock command4
-  "setxkbmap -option ctrl:nocaps"
-}
-
-for app = 1, #autorun_apps do
-  awful.util.spawn(autorun_apps[app])
-end
-
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")

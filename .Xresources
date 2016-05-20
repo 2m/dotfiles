@@ -1,0 +1,23 @@
+XTerm*selectToClipboard: true
+Xterm*saveLines: 10000 
+
+! colorscheme from http://dotshare.it/dots/1069/
+*background: #EFECE3
+*foreground: #4B3822
+*color0: #4B3822
+*color8: #4B3822
+*color1: #A93D2E
+*color9: #A93D2E
+*color2: #7D893E
+*color10: #7D893E
+*color3: #D9AF30
+*color11: #D9AF30
+*color4: #557E8D
+*color12: #557E8D
+*color5: #D1725C
+*color13: #D1725C
+*color6: #8BBCCB
+*color14: #8BBCCB
+*color7: #EFECE3
+*color15: #EFECE3
+
