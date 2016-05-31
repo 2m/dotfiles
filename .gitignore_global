@@ -12,7 +12,7 @@
 .tmpBin
 .tox
 target
-journal
+/journal
 local.properties
 .sbt/cache
 .target
@@ -36,3 +36,5 @@ application.log
 *.class
 *.sjsir
 *.pyc
+/akka-diagnostics
+hs_err_pid*
