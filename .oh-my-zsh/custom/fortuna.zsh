@@ -6,7 +6,7 @@ if [[ $(basename -s .zsh $0) == $(hostname) ]] ; then
         sudo systemctl reboot --firmware-setup
 	;;
       "win")
-        sudo efibootmgr -n 0001 && systemctl reboot
+        sudo efibootmgr -n 0000 && systemctl reboot
 	;;
       *)
         systemctl reboot
