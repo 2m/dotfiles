@@ -38,3 +38,4 @@ application.log
 *.pyc
 /akka-diagnostics
 hs_err_pid*
+.ensime*

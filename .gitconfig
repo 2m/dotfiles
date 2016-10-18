@@ -44,3 +44,5 @@
 
 [core]
     excludesfile = /home/martynas/.gitignore_global
+    commentchar = ";"
+    editor = "emacs"
