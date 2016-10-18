@@ -65,10 +65,7 @@ local layouts =
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
     awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
+    awful.layout.suit.fair.horizontal
 }
 -- }}}
 
@@ -83,10 +80,16 @@ end
 -- {{{ Tags
 tag_layout = {
   {
-    names  = { 1, 2, 3, "term", "bg",
-               6, "web", "lightbend", 9 },
-    layout = { layouts[1], layouts[1], layouts[1], layouts[8], layouts[8],
-               layouts[1], layouts[1], layouts[1], layouts[1] }
+    names  = { "ide",  "editor",    3,
+               "term", "bg",        6,
+               "web",  "lightbend", 9 },
+    layout = { layouts[1], layouts[1], layouts[1],
+               layouts[2], layouts[2], layouts[2],
+               layouts[1], layouts[1], layouts[1] }
+  },
+  {
+    names  = { 1, 2, 3 },
+    layout = { layouts[5], layouts[5], layouts[5] }
   },
   {
     names  = { 1, 2, 3 },
@@ -110,7 +113,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Initialize widget
 netwidget = wibox.widget.textbox()
 -- Register widget
-vicious.register(netwidget, vicious.widgets.net, '<span color="#cc9393">${wlp8s0 down_kb}</span> <span color="#7f9f7f">${wlp8s0 up_kb}</span>, 3')
+vicious.register(netwidget, vicious.widgets.net, '<span color="#cc9393">${enp3s0 down_kb}</span> <span color="#7f9f7f">${enp3s0 up_kb}</span>, 3')
 
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
@@ -271,8 +274,9 @@ globalkeys = awful.util.table.join(
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
               end),
-    -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    awful.key({modkey,            }, "F1",     function () awful.screen.focus(3) end),
+    awful.key({modkey,            }, "F2",     function () awful.screen.focus(1) end),
+    awful.key({modkey,            }, "F3",     function () awful.screen.focus(2) end)
 )
 
 clientkeys = awful.util.table.join(
@@ -387,7 +391,7 @@ client.connect_signal("manage", function (c, startup)
     if not startup then
         -- Set the windows at the slave,
         -- i.e. put it at the end of others instead of setting it master.
-        -- awful.client.setslave(c)
+        awful.client.setslave(c)
 
         -- Put windows in a smart way, only if they does not set an initial position.
         if not c.size_hints.user_position and not c.size_hints.program_position then

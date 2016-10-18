@@ -1,5 +1,5 @@
 XTerm*selectToClipboard: true
-Xterm*saveLines: 10000 
+Xterm*saveLines: 100000
 
 ! colorscheme from http://dotshare.it/dots/1069/
 *background: #EFECE3
@@ -21,3 +21,5 @@ Xterm*saveLines: 10000
 *color7: #EFECE3
 *color15: #EFECE3
 
+! make meta key work on emacs
+XTerm*metaSendsEscape: true
