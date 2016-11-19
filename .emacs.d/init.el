@@ -51,6 +51,7 @@
 (use-package ranger)
 (use-package markdown-mode)
 (use-package popup-imenu)
+(use-package lua-mode)
 
 (setq scala-indent:use-javadoc-style t)
 
