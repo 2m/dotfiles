@@ -40,13 +40,18 @@ end
 -- }}}
 
 -- {{{ Variable definitions
+local handle = io.popen("hostname")
+local result = handle:read()
+handle:close()
+
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 theme.tasklist_disable_icon = true
 
+
 -- This is used later as the default terminal and editor to run.
 terminal = "xterm +sb -fa Monospace -fs 11"
-editor = os.getenv("EDITOR") or "vim"
+editor = os.getenv("EDITOR") or "emacs"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -274,10 +279,43 @@ globalkeys = awful.util.table.join(
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
               end),
-    awful.key({modkey,            }, "F1",     function () awful.screen.focus(3) end),
-    awful.key({modkey,            }, "F2",     function () awful.screen.focus(1) end),
-    awful.key({modkey,            }, "F3",     function () awful.screen.focus(2) end)
+    awful.key({ modkey,           }, "F1",     function () awful.screen.focus(3)           end),
+    awful.key({ modkey,           }, "F2",     function () awful.screen.focus(1)           end),
+    awful.key({ modkey,           }, "F3",     function () awful.screen.focus(2)           end),
+    awful.key({ modkey,           }, "Left",   function () tagSwitchHorizontal(-1, false)  end),
+    awful.key({ modkey,           }, "Right",  function () tagSwitchHorizontal(1, false)   end),
+    awful.key({ modkey,           }, "Up",     function () tagSwitchVertical(3, false)     end),
+    awful.key({ modkey,           }, "Down",   function () tagSwitchVertical(-3, false)    end),
+
+    awful.key({ }, "XF86MonBrightnessDown", function () awful.util.spawn("xbacklight -dec 5") end),
+    awful.key({ }, "XF86MonBrightnessUp",   function () awful.util.spawn("xbacklight -inc 5") end),
+    awful.key({ }, "XF86AudioRaiseVolume",  function () awful.util.spawn("amixer set Master 9%+") end),
+    awful.key({ }, "XF86AudioLowerVolume",  function () awful.util.spawn("amixer set Master 9%-") end),
+    awful.key({ }, "XF86AudioMute",         function () awful.util.spawn("amixer sset Master toggle") end)
 )
+
+tagSwitch = function(newidx, moveClient)
+   local newtag = tags[mouse.screen][newidx]
+   if moveClient then
+       awful.client.movetotag(newtag)
+   end
+   awful.tag.viewonly(newtag)
+end
+
+tagSwitchHorizontal = function(offset, moveClient)
+   local dim = 3
+   local curidx = awful.tag.getidx()
+   local cur = math.floor((curidx - 1) / dim)
+   local newidx = ((curidx - 1 + offset) + dim) % dim + 1 + (3 * cur)
+   tagSwitch(newidx, moveClient)
+end
+
+tagSwitchVertical = function(offset, moveClient)
+   local dim = 9
+   local curidx = awful.tag.getidx()
+   local newidx = ((curidx - 1 + offset) + dim) % dim + 1
+   tagSwitch(newidx, moveClient)
+end
 
 clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
@@ -296,7 +334,11 @@ clientkeys = awful.util.table.join(
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
-        end)
+        end),
+    awful.key({ modkey, "Shift"   }, "Left",  function (c) tagSwitchHorizontal(-1, true)       end),
+    awful.key({ modkey, "Shift"   }, "Right", function (c) tagSwitchHorizontal(1, true)        end),
+    awful.key({ modkey, "Shift"   }, "Up",    function (c) tagSwitchVertical(3, true)          end),
+    awful.key({ modkey, "Shift"   }, "Down",  function (c) tagSwitchVertical(-3, true)         end)
 )
 
 -- Bind all numpad buttons to tags.
