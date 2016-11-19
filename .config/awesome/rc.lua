@@ -41,11 +41,15 @@ end
 
 -- {{{ Variable definitions
 local handle = io.popen("hostname")
-local result = handle:read()
+local hostname = handle:read()
 handle:close()
 
+local ifname = "enp3s0"
+if hostname == "donata" then ifname = "wlp58s0" end
+
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+beautiful.init(awful.util.get_themes_dir() .. "zenburn/theme.lua")
+local theme = beautiful.get()
 theme.tasklist_disable_icon = true
 
 
@@ -118,7 +122,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Initialize widget
 netwidget = wibox.widget.textbox()
 -- Register widget
-vicious.register(netwidget, vicious.widgets.net, '<span color="#cc9393">${enp3s0 down_kb}</span> <span color="#7f9f7f">${enp3s0 up_kb}</span>, 3')
+vicious.register(netwidget, vicious.widgets.net, string.format('<span color="#cc9393">${%s down_mb} MB/s</span> <span color="#7f9f7f">${%s up_mb} MB/s</span>, 3', ifname, ifname))
 
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
@@ -295,7 +299,7 @@ globalkeys = awful.util.table.join(
 )
 
 tagSwitch = function(newidx, moveClient)
-   local newtag = tags[mouse.screen][newidx]
+   local newtag = tags[mouse.screen.index][newidx]
    if moveClient then
        awful.client.movetotag(newtag)
    end
