@@ -14,6 +14,8 @@ local menubar = require("menubar")
 local vicious = require("vicious")
 local kbdcfg = require("widgets/kbdcfg")
 
+local lain = require("lain")
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -52,6 +54,9 @@ beautiful.init(awful.util.get_themes_dir() .. "zenburn/theme.lua")
 local theme = beautiful.get()
 theme.tasklist_disable_icon = true
 
+theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
+theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
+theme.useless_gap_width  = 10
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xterm +sb -fa Monospace -fs 11"
@@ -69,12 +74,8 @@ modkey = "Mod4"
 local layouts =
 {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal
+    lain.layout.centerfair,
+    awful.layout.suit.tile.top
 }
 -- }}}
 
@@ -98,11 +99,11 @@ tag_layout = {
   },
   {
     names  = { 1, 2, 3 },
-    layout = { layouts[5], layouts[5], layouts[5] }
+    layout = { layouts[3], layouts[3], layouts[3] }
   },
   {
     names  = { 1, 2, 3 },
-    layout = { layouts[5], layouts[5], layouts[5] }
+    layout = { layouts[3], layouts[3], layouts[3] }
   }
 }
 -- Define a tag table which will hold all screen tags.
