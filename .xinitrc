@@ -12,5 +12,7 @@ setxkbmap -option ctrl:nocaps
 
 udiskie &
 
+nitrogen --restore &
+
 # Start a WM
 exec awesome

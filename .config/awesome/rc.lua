@@ -53,6 +53,7 @@ if hostname == "donata" then ifname = "wlp58s0" end
 beautiful.init(awful.util.get_themes_dir() .. "zenburn/theme.lua")
 local theme = beautiful.get()
 theme.tasklist_disable_icon = true
+theme.border_width = "4"
 
 theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
 theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
@@ -343,7 +344,8 @@ clientkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "Left",  function (c) tagSwitchHorizontal(-1, true)       end),
     awful.key({ modkey, "Shift"   }, "Right", function (c) tagSwitchHorizontal(1, true)        end),
     awful.key({ modkey, "Shift"   }, "Up",    function (c) tagSwitchVertical(3, true)          end),
-    awful.key({ modkey, "Shift"   }, "Down",  function (c) tagSwitchVertical(-3, true)         end)
+    awful.key({ modkey, "Shift"   }, "Down",  function (c) tagSwitchVertical(-3, true)         end),
+    awful.key({ modkey, "Control" }, "m",     lain.util.magnify_client                            )
 )
 
 -- Bind all numpad buttons to tags.
