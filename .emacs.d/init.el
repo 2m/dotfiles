@@ -51,7 +51,25 @@
 (use-package ranger)
 (use-package markdown-mode)
 (use-package popup-imenu)
+
 (use-package lua-mode)
+
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+(use-package rust-mode)
+(use-package flycheck-rust)
+(add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+(use-package racer)
+(use-package company)
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+(add-hook 'racer-mode-hook #'company-mode)
+(require 'rust-mode)
+(define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+(setq company-tooltip-align-annotations t)
 
 (setq scala-indent:use-javadoc-style t)
 
