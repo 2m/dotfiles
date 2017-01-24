@@ -341,10 +341,10 @@ clientkeys = awful.util.table.join(
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
         end),
-    awful.key({ modkey, "Shift"   }, "Left",  function (c) tagSwitchHorizontal(-1, true)       end),
-    awful.key({ modkey, "Shift"   }, "Right", function (c) tagSwitchHorizontal(1, true)        end),
-    awful.key({ modkey, "Shift"   }, "Up",    function (c) tagSwitchVertical(3, true)          end),
-    awful.key({ modkey, "Shift"   }, "Down",  function (c) tagSwitchVertical(-3, true)         end),
+    awful.key({ modkey, "Shift"     }, "Left",  function (c) tagSwitchHorizontal(-1, true)       end),
+    awful.key({ modkey, "Shift"     }, "Right", function (c) tagSwitchHorizontal(1, true)        end),
+    awful.key({ modkey, "Shift"     }, "Up",    function (c) tagSwitchVertical(3, true)          end),
+    awful.key({ modkey, "Shift"     }, "Down",  function (c) tagSwitchVertical(-3, true)         end),
     awful.key({ modkey, "Control" }, "m",     lain.util.magnify_client                            )
 )
 
