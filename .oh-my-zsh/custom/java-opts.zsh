@@ -3,7 +3,7 @@ function javaOpts() {
   JAVA_VERSION=`java -version 2>&1 | grep "version" | cut -d ' ' -f3 | cut -d '.' -f2`
 
   JAVA_OPTS=""
-  JAVA_OPTS="$JAVA_OPTS -Xmx2g"
+  JAVA_OPTS="$JAVA_OPTS -Xmx3g"
   JAVA_OPTS="$JAVA_OPTS -Xms2g"
   JAVA_OPTS="$JAVA_OPTS -Xss2m"
   JAVA_OPTS="$JAVA_OPTS -XX:ReservedCodeCacheSize=256m" # Maximum size for the JIT's code cache

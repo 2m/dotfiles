@@ -5,3 +5,4 @@ CARGO_BIN=~/.cargo/bin
 
 export PATH=$PATH:$RUBY_GEM_BIN:$LOCAL_BIN:$CARGO_STABLE_BIN:$CARGO_BIN
 export GOPATH=~/.local/share/gopath
+export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/
