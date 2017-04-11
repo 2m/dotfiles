@@ -1,0 +1,6 @@
+[submodule ".config/awesome/lain"]
+	path = .config/awesome/lain
+	url = https://github.com/copycat-killer/lain.git
+[submodule ".oh-my-zsh/custom/plugins/fast-syntax-highlighting"]
+	path = .oh-my-zsh/custom/plugins/fast-syntax-highlighting
+	url = git@github.com:zdharma/fast-syntax-highlighting.git
