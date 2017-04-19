@@ -60,7 +60,8 @@ theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
 theme.useless_gap_width  = 10
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm +sb -fa Monospace -fs 11"
+-- terminal = "xterm +sb -fa Monospace -fs 11"
+terminal = "alacritty -e tmux"
 editor = os.getenv("EDITOR") or "emacs"
 editor_cmd = terminal .. " -e " .. editor
 
