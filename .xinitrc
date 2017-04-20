@@ -4,7 +4,7 @@
 numlockx
 
 # Disable default Caps Lock command
-setxkbmap -option ctrl:nocaps
+setxkbmap -option caps:none
 
 # Load Xresources for xterm customization
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
