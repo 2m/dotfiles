@@ -44,6 +44,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(awful.util.get_themes_dir() .. "zenburn/theme.lua")
+beautiful.tasklist_disable_icon = true
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty -e tmux"
