@@ -27,7 +27,8 @@ shortcuts.add_to_client_keys = function(client_keys)
         awful.key({ modkey, "Shift"     }, "Left",  function (c) tagSwitchHorizontal(-1, true)       end),
         awful.key({ modkey, "Shift"     }, "Right", function (c) tagSwitchHorizontal(1, true)        end),
         awful.key({ modkey, "Shift"     }, "Up",    function (c) tagSwitchVertical(3, true)          end),
-        awful.key({ modkey, "Shift"     }, "Down",  function (c) tagSwitchVertical(-3, true)         end)
+        awful.key({ modkey, "Shift"     }, "Down",  function (c) tagSwitchVertical(-3, true)         end),
+        awful.key({ modkey,             }, "w",     function (c) c:kill()                            end)
     )
 end
 
