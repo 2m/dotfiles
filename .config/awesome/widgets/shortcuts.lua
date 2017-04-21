@@ -8,6 +8,7 @@ shortcuts.add_to_global_keys = function(global_keys)
         awful.key({ modkey,           }, "F1",     function () awful.screen.focus(3) end),
         awful.key({ modkey,           }, "F2",     function () awful.screen.focus(1) end),
         awful.key({ modkey,           }, "F3",     function () awful.screen.focus(2) end),
+
         awful.key({ modkey,           }, "Left",   function () tagSwitchHorizontal(-1, false)  end),
         awful.key({ modkey,           }, "Right",  function () tagSwitchHorizontal(1, false)   end),
         awful.key({ modkey,           }, "Up",     function () tagSwitchVertical(3, false)     end),
