@@ -154,7 +154,7 @@ local function set_wallpaper(s)
 end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
-screen.connect_signal("property::geometry", set_wallpaper)
+-- screen.connect_signal("property::geometry", set_wallpaper)
 
 tag_layout = {
     {
@@ -177,7 +177,7 @@ tag_layout = {
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
-    set_wallpaper(s)
+    -- set_wallpaper(s)
 
     -- Each screen has its own tag table.
     awful.tag(tag_layout[s.index].names, s, tag_layout[s.index].layouts)
