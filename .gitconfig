@@ -28,6 +28,8 @@
 [alias]
     st = status -sb
     ci = commit
+    cia = commit -a
+    ciaa = commit -a --amend
     br = branch
     co = checkout
     df = diff
