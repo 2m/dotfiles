@@ -40,6 +40,7 @@ tagSwitch = function(newidx, moveClient)
         awful.client.movetotag(newtag)
     end
     awful.tag.viewonly(newtag)
+    awful.spawn.easy_async({"notify-send", "-u", "normal", "-t", "300", "--", newtag.name}, function() end)
 end
 
 tagSwitchHorizontal = function(offset, moveClient)
