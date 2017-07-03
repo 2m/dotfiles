@@ -39,3 +39,4 @@ application.log
 /akka-diagnostics
 hs_err_pid*
 .ensime*
+venv
