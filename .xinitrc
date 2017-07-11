@@ -9,7 +9,6 @@ numlockx
 
 udiskie &
 
-xautolock -detectsleep -time 3 -locker "slock" -notify 10 -notifier "notify-send -u critical -t 10000 -- 'Locking screen in 10 seconds'" &
 nitrogen --restore &
 albert &
 
