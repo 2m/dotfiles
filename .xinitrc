@@ -11,6 +11,7 @@ udiskie &
 
 nitrogen --restore &
 albert &
+rescuetime &
 
 # Start a WM
 exec awesome
