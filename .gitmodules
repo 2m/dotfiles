@@ -4,6 +4,3 @@
 [submodule ".oh-my-zsh/custom/plugins/fast-syntax-highlighting"]
 	path = .oh-my-zsh/custom/plugins/fast-syntax-highlighting
 	url = git@github.com:zdharma/fast-syntax-highlighting.git
-[submodule ".oh-my-zsh/custom/plugins/zsh-histdb"]
-	path = .oh-my-zsh/custom/plugins/zsh-histdb
-	url = git@github.com:larkery/zsh-histdb.git
