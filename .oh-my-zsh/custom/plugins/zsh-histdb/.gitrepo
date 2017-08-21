@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:larkery/zsh-histdb.git
+	branch = master
+	commit = 65d2f8834d3b3106f8815054d5cfebeb57d4f889
+	parent = 456cbc22a93fd9bf8d209332014d5cd22ae905fe
+	cmdver = 0.3.1
