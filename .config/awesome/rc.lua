@@ -212,7 +212,7 @@ globalkeys = gears.table.join(
     ),
     awful.key({ modkey,           }, "d",
         function ()
-           awful.spawn('notify-send -u normal -t 5000 -- "'.. os.date() ..'"')
+           awful.spawn.easy_async({"notify-send", "-u", "normal", "-t", "5000", "--", os.date()}, function() end)
         end,
         {description = "show current date and time", group = "awesome"}
     ),
