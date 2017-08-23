@@ -50,7 +50,7 @@ theme.tasklist_disable_icon = true
 
 theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
 theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
-theme.useless_gap_width  = 10
+theme.useless_gap        = 2
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty -e tmux"
@@ -66,7 +66,7 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.floating,
-    lain.layout.centerfair,
+    lain.layout.termfair.center,
     awful.layout.suit.tile.top,
     awful.layout.suit.tile.left
 }
