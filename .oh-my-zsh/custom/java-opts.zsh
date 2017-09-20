@@ -1,6 +1,6 @@
 function javaOpts() {
 
-  JAVA_VERSION=`java -version 2>&1 | grep "version" | cut -d ' ' -f3 | cut -d '.' -f2`
+  JAVA_VERSION=`java -version 2>&1 | grep "version" | cut -d '"' -f3 | cut -d '.' -f2`
 
   JAVA_OPTS=""
   JAVA_OPTS="$JAVA_OPTS -Xmx3g"
