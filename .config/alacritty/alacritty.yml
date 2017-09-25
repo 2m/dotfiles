@@ -114,7 +114,7 @@ colors:
 key_bindings:
   - { key: V,        mods: Control|Shift,   action: Paste                }
   - { key: C,        mods: Control|Shift,   action: Copy                 }
-  - { key: Insert,   mods: Shift,   action: PasteSelection               }
+  - { key: Insert,   mods: Shift,   action: Paste                        }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }
   - { key: Home,                    chars: "\x1b[1~",  mode: AppCursor   }
   - { key: End,                     chars: "\x1b[F",   mode: ~AppCursor  }
