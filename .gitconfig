@@ -1,6 +1,7 @@
 [user]
-    email = martynas@2m.lt
+    email = self@2m.lt
     name = Martynas Mickevičius
+    signingkey = E735DF276C508071
 
 [push]
     default = simple
@@ -48,3 +49,6 @@
     excludesfile = /home/martynas/.gitignore_global
     commentchar = ";"
     editor = "emacs"
+
+[commit]
+    gpgsign = true
