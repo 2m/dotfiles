@@ -1,0 +1,7 @@
+//addSbtPlugin("net.virtual-void"    % "sbt-dependency-graph" % "0.8.2")
+addSbtPlugin("com.jsuereth"        % "sbt-pgp"              % "1.1.0-M1")
+addSbtPlugin("io.get-coursier"     % "sbt-coursier"         % "1.0.0-RC12")
+//addSbtPlugin("com.github.tkawachi" % "sbt-repeat"           % "0.0.1")
+addSbtPlugin("io.spray"            % "sbt-revolver"         % "0.9.0")
+addSbtPlugin("org.duhemm"          % "sbt-errors-summary"   % "0.6.0")
+addSbtPlugin("com.timushev.sbt"    % "sbt-updates"          % "0.3.1")
