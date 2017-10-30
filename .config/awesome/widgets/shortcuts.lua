@@ -14,8 +14,8 @@ shortcuts.add_to_global_keys = function(global_keys)
         awful.key({ modkey,           }, "Up",     function () tagSwitchVertical(3, false)     end),
         awful.key({ modkey,           }, "Down",   function () tagSwitchVertical(-3, false)    end),
 
-        awful.key({ }, "XF86MonBrightnessDown", function () awful.spawn.easy_async({"xbacklight", "-dec", "5"}, function() end) end),
-        awful.key({ }, "XF86MonBrightnessUp",   function () awful.spawn.easy_async({"xbacklight", "-inc", "5"}, function() end) end),
+        awful.key({ }, "XF86MonBrightnessDown", function () awful.spawn.easy_async({"light", "-U", "5%"}, function() end) end),
+        awful.key({ }, "XF86MonBrightnessUp",   function () awful.spawn.easy_async({"light", "-A", "5%"}, function() end) end),
         awful.key({ }, "XF86AudioRaiseVolume",  function () awful.spawn.easy_async({"amixer", "set", "Master", "9%+"}, function() end) end),
         awful.key({ }, "XF86AudioLowerVolume",  function () awful.spawn.easy_async({"amixer", "set", "Master", "9%-"}, function() end) end),
         awful.key({ }, "XF86AudioMute",         function () awful.spawn.easy_async({"amixer", "sset", "Master", "toggle"}, function() end) end)

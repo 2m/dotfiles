@@ -12,6 +12,7 @@ udiskie &
 nitrogen --restore &
 albert &
 rescuetime &
+compton -z -c -r8 -l-12 -t-8 -b -G -f -D30 -I0.45 -O0.45 --paint-on-overlay --unredir-if-possible --backend glx --glx-no-stencil --glx-no-rebind-pixmap --vsync opengl-swc
 
 # Start a WM
 exec awesome
