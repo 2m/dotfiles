@@ -1,0 +1,5 @@
+XTerm*selectToClipboard: true
+Xterm*saveLines: 100000
+
+! make meta key work on emacs
+XTerm*metaSendsEscape: true
