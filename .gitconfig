@@ -48,7 +48,7 @@
 [core]
     excludesfile = /home/martynas/.gitignore_global
     commentchar = ";"
-    editor = "emacs"
+    editor = "nvim"
 
 [commit]
     gpgsign = true

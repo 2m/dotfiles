@@ -40,3 +40,5 @@ application.log
 hs_err_pid*
 .ensime*
 venv
+ensime-langserver.log
+pc.stdout.log
