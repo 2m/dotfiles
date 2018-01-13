@@ -423,8 +423,8 @@ awful.rules.rules = {
           "Wpa_gui",
           "pinentry",
           "veromix",
-          "xtightvncviewer"},
-
+          "xtightvncviewer",
+        },
         name = {
           "Event Tester",  -- xev.
         },
@@ -437,6 +437,10 @@ awful.rules.rules = {
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
       }, properties = { titlebars_enabled = false }
+    },
+
+    { rule_any = {class = { "mpv" }
+      }, properties = { floating = true, sticky = true }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
