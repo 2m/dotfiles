@@ -1,0 +1,4 @@
+# Scale applications like qutebrowser
+QT_SCALE_FACTOR=2
+
+EDITOR=nvim
