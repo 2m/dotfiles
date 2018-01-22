@@ -53,7 +53,7 @@ theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
 theme.useless_gap        = 2
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty -e tmux"
+terminal = "alacritty -e tmux-attach-or-new"
 editor_cmd = "alacritty -e emacs"
 
 -- Default modkey.
