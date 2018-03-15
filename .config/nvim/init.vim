@@ -18,7 +18,6 @@ Plug 'eugen0329/vim-esearch'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/fzf'
 Plug 'easymotion/vim-easymotion'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
