@@ -19,6 +19,9 @@ Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
+Plug 'urbainvaes/vim-remembrall'
+Plug 'baverman/vial'
+Plug 'baverman/vial-http'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
@@ -35,6 +38,8 @@ set guifont=Nerd\ Font\ Complete
 set encoding=utf-8
 
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+
 let g:rainbow_active = 1 
 
 nmap ,, :NERDTreeFind<CR>
@@ -47,3 +52,10 @@ let g:LanguageClient_serverCommands = {
 
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+
+" For vial-http
+set hidden
+filetype plugin on
+
+au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au WinEnter,BufWinEnter __vial_* let w:airline_disabled=1
