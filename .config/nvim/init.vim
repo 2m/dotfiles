@@ -22,6 +22,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'urbainvaes/vim-remembrall'
 Plug 'baverman/vial'
 Plug 'baverman/vial-http'
+Plug 'benmills/vimux'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
