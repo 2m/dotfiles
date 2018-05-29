@@ -47,7 +47,7 @@ nmap ,, :NERDTreeFind<CR>
    
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_serverCommands = {
-    \ 'scala': ['coursier', 'launch', 'lt.dvim.sssio:sssio_2.12:bb0365cf'],
+    \ 'scala': ['coursier', 'launch', 'org.scalameta:metals_2.12:0.1.0-M1+131-42765d7e', '-M', 'scala.meta.metals.Main'],
     \ 'rust': ['rustup', 'run', 'nightly', 'rls']
     \ }
 

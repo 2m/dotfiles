@@ -44,3 +44,4 @@ ensime-langserver.log
 pc.stdout.log
 .gradle
 build
+.metals
