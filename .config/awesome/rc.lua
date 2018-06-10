@@ -53,8 +53,8 @@ theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
 theme.useless_gap        = 2
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty -e tmux-attach-or-new"
-editor_cmd = "alacritty -e emacs"
+terminal = "qterminal -e tmux-attach-or-new"
+editor_cmd = "qterminal -e emacs"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
