@@ -1,6 +1,3 @@
-#export ZSH=$HOME/.oh-my-zsh
-#ZSH_THEME="robbyrussell"
-
 # emacs key bindings
 bindkey -e
 
@@ -36,6 +33,10 @@ export GPG_TTY=$(tty)
 # ctrl + arrows
 bindkey '^[[1;5C' emacs-forward-word
 bindkey '^[[1;5D' emacs-backward-word
+
+# home and end
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
 
 precmd() {
   # for tmux-gitbar which hooks to PROMPT_COMMAND
