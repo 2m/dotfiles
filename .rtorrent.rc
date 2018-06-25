@@ -52,9 +52,6 @@ session = ~/.cache/rtorrent/session
 # fixed that causes lack of diskspace not to be properly reported.
 #check_hash = no
 
-# Set whether the client should try to connect to UDP trackers.
-use_udp_trackers = yes
-
 # Alternative calls to bind and ip that should handle dynamic ip's.
 #schedule = ip_tick,0,1800,ip=rakshasa
 #schedule = bind_tick,0,1800,bind=rakshasa
@@ -78,7 +75,3 @@ dht = auto
 # UDP port to use for DHT. 
 # 
 dht_port = 6881
-
-# Enable peer exchange (for torrents not marked private)
-#
-peer_exchange = yes
