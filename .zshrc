@@ -37,6 +37,7 @@ bindkey '^[[1;5D' emacs-backward-word
 # home and end
 bindkey "${terminfo[khome]}" beginning-of-line
 bindkey "${terminfo[kend]}" end-of-line
+bindkey "${terminfo[kdch1]}" delete-char
 
 precmd() {
   # for tmux-gitbar which hooks to PROMPT_COMMAND
