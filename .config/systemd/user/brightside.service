@@ -1,0 +1,9 @@
+[Unit]
+Description=Brightside
+
+[Service]
+ExecStart=/usr/bin/brightside
+Restart=always
+
+[Install]
+WantedBy=default.target
