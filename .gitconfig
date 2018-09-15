@@ -53,4 +53,6 @@
 [commit]
     gpgsign = true
 [hub]
-	protocol = ssh
+    protocol = ssh
+[diff]
+	noprefix = true
