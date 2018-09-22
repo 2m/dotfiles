@@ -43,6 +43,9 @@
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
 
+    # rebase interactively all commits from the fork point of the given branch
+    rbi = !sh -c \"git rebase -i `git merge-base $1 HEAD`\" -
+
     sub = submodule update --init --recursive
 
 [core]
