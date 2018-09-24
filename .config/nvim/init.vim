@@ -23,6 +23,7 @@ Plug 'urbainvaes/vim-remembrall'
 Plug 'baverman/vial'
 Plug 'baverman/vial-http'
 Plug 'benmills/vimux'
+Plug 'tpope/vim-unimpaired'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
@@ -31,6 +32,8 @@ Plug 'idris-hackers/idris-vim'
 call plug#end()
 
 let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
+
+let g:esearch#out#win#open = 'enew'
 
 set background=dark
 
@@ -45,7 +48,7 @@ let g:rainbow_active = 1
 
 nmap ,, :NERDTreeFind<CR>
    
-let g:LanguageClient_autoStart = 1
+let g:LanguageClient_autoStart = 0
 let g:LanguageClient_serverCommands = {
     \ 'scala': ['coursier', 'launch', 'org.scalameta:metals_2.12:0.1.0-M1+131-42765d7e', '-M', 'scala.meta.metals.Main'],
     \ 'rust': ['rustup', 'run', 'nightly', 'rls']
