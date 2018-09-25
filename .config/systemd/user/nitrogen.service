@@ -2,8 +2,8 @@
 Description=nitrogen
 
 [Service]
+Type=oneshot
 ExecStart=/usr/bin/nitrogen --restore
-Restart=on-failure
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical.target
