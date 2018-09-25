@@ -3,7 +3,7 @@ Description=compton
 
 [Service]
 ExecStart=/usr/bin/compton -z -c -r8 -l-12 -t-8 -b -G -f -D30 -I0.45 -O0.45 --paint-on-overlay --unredir-if-possible --backend glx --glx-no-stencil --glx-no-rebind-pixmap --vsync opengl-swc
-Restart=always
+Restart=on-failure
 
 [Install]
 WantedBy=default.target

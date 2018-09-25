@@ -1,0 +1,9 @@
+[Unit]
+Description=nitrogen
+
+[Service]
+ExecStart=/usr/bin/nitrogen --restore
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
