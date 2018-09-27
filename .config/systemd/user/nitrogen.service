@@ -4,6 +4,7 @@ Description=nitrogen
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/nitrogen --restore
+Environment=DISPLAY=:0
 
 [Install]
-WantedBy=graphical.target
+WantedBy=default.target
