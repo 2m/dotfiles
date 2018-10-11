@@ -25,13 +25,19 @@ Plug 'baverman/vial-http'
 Plug 'benmills/vimux'
 Plug 'tpope/vim-unimpaired'
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
 
 Plug 'idris-hackers/idris-vim'
 
 call plug#end()
 
 let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
 
 let g:esearch#out#win#open = 'enew'
 
