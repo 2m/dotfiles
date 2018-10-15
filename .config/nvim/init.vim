@@ -5,13 +5,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb'
 Plug 'codeindulgence/vim-tig'
-
 Plug 'derekwyatt/vim-scala'
-Plug 'autozimu/LanguageClient-neovim', {'tag': 'binary-*-x86_64-unknown-linux-musl'}
-
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'eugen0329/vim-esearch'
@@ -24,20 +20,12 @@ Plug 'baverman/vial'
 Plug 'baverman/vial-http'
 Plug 'benmills/vimux'
 Plug 'tpope/vim-unimpaired'
-
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-
+Plug 'w0rp/ale'
 Plug 'idris-hackers/idris-vim'
 
 call plug#end()
 
 let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
-
-" enable ncm2 for all buffers
-autocmd BufEnter * call ncm2#enable_for_buffer()
-" IMPORTANT: :help Ncm2PopupOpen for more information
-set completeopt=noinsert,menuone,noselect
 
 let g:esearch#out#win#open = 'enew'
 
@@ -53,15 +41,17 @@ let g:airline#extensions#tabline#enabled = 1
 let g:rainbow_active = 1 
 
 nmap ,, :NERDTreeFind<CR>
+nmap <C-w> :bd<CR>
    
-let g:LanguageClient_autoStart = 0
-let g:LanguageClient_serverCommands = {
-    \ 'scala': ['coursier', 'launch', 'org.scalameta:metals_2.12:0.1.0-M1+131-42765d7e', '-M', 'scala.meta.metals.Main'],
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls']
-    \ }
+let g:ale_linters = {'rust': ['rls', 'cargo', 'rustc']}
+let g:ale_fixers = {'rust': ['rustfmt']}
+let g:ale_completion_enabled = 1
+let g:ale_rust_rls_toolchain = 'nightly'
 
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nmap <silent> <S-F2> <Plug>(ale_previous_wrap)
+nmap <silent> <F2> <Plug>(ale_next_wrap)
+nmap <C-q> :ALEHover<CR>
+noremap gd :ALEGoToDefinition<CR>
 
 " For vial-http
 set hidden
