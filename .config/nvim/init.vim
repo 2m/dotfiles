@@ -43,10 +43,14 @@ let g:rainbow_active = 1
 nmap ,, :NERDTreeFind<CR>
 nmap <C-w> :bd<CR>
    
-let g:ale_linters = {'rust': ['rls', 'cargo', 'rustc']}
-let g:ale_fixers = {'rust': ['rustfmt']}
+let g:ale_linters = {'rust': ['rls', 'cargo', 'rustc'], 'scala': ['sbtserver']}
+let g:ale_fixers = {'rust': ['rustfmt'], 'scala': ['scalafmt']}
 let g:ale_completion_enabled = 1
 let g:ale_rust_rls_toolchain = 'nightly'
+let g:ale_sign_column_always = 1
+let g:ale_sign_warning = '⚠'
+let g:ale_sign_error = '☓'
+let g:ale_set_highlights = 0
 
 nmap <silent> <S-F2> <Plug>(ale_previous_wrap)
 nmap <silent> <F2> <Plug>(ale_next_wrap)
