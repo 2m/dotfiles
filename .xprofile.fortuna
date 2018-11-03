@@ -1,7 +1,9 @@
-#xrandr --output DisplayPort-0 --mode 2560x1440 --rate 119.88
-#xrandr --output DVI-D-0 --mode 1920x1080 --rotate left --left-of DisplayPort-0
-#xrandr --output HDMI-A-0 --mode 1280x1024 --pos 3640x700
-
+xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144 --primary
+xrandr --output DP-1 --mode 2560x1440 --rate 60 --primary
 xrandr --output DP-2 --mode 2560x1440 --rate 144 --primary
+
+xrandr --output DVI-D-1 --mode 1920x1080 --rotate left --left-of DisplayPort-0
+xrandr --output HDMI-1 --mode 1920x1080 --rotate left --left-of DP-1
 xrandr --output DVI-D-0 --mode 1920x1080 --rotate left --left-of DP-2
-xrandr --output HDMI-0 --mode 1280x1024 --pos 3640x700
+
+xrandr --output HDMI-A-0 --off
