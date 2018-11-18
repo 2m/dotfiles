@@ -1,8 +1,11 @@
 [Unit]
 Description=albert
+After=display-manager.service
+Requires=display-manager.service
 
 [Service]
 ExecStart=/usr/bin/albert
+Environment=DISPLAY=:0
 Restart=always
 
 [Install]
