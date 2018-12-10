@@ -9,11 +9,10 @@ CHROOT          DEFAULT=${HOME}/chroot
 ANDROID_HOME    DEFAULT=@{HOME}/Android/Sdk
 GOPATH          DEFAULT=@{HOME}/.local/share/gopath
 
-RUBY_GEM_BIN    DEFAULT=@{HOME}/.gem/ruby/2.4.0/bin
 LOCAL_BIN       DEFAULT=@{HOME}/.local/bin
 CARGO_BIN       DEFAULT=@{HOME}/.cargo/bin
 GOPATH_BIN      DEFAULT=${GOPATH}/bin
 ANDROID_P_BIN   DEFAULT=${ANDROID_HOME}/platform-tools
 ANDROID_T_BIN   DEFAULT=${ANDROID_HOME}/tools/bin
 
-PATH            DEFAULT=${RUBY_GEM_BIN}:${LOCAL_BIN}:${CARGO_BIN}:${GOPATH_BIN}:${ANDROID_P_BIN}:${ANDROID_T_BIN}:/usr/local/sbin:/usr/local/bin:/usr/bin
+PATH            DEFAULT=${LOCAL_BIN}:${CARGO_BIN}:${GOPATH_BIN}:${ANDROID_P_BIN}:${ANDROID_T_BIN}:/usr/local/sbin:/usr/local/bin:/usr/bin
