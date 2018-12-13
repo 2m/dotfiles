@@ -1,8 +1,0 @@
-#!/bin/bash
-
-session=$(tmux list-sessions | grep -v attached | cut -d: -f1 | head -n 1)
-if [ -z "$session" ]; then
-  tmux
-else
-  tmux attach -t $session
-fi
