@@ -46,6 +46,9 @@
     # rebase interactively all commits from the fork point of the given branch
     rbi = !sh -c \"git rebase -i `git merge-base $1 HEAD`\" -
 
+    # same as rbi but also rebase on top of the given branch
+    rbo = !sh -c \"git rebase -i --onto $1 `git merge-base $1 HEAD`\" -
+
     sub = submodule update --init --recursive
 
 [core]
@@ -58,4 +61,4 @@
 [hub]
     protocol = ssh
 [diff]
-	noprefix = true
+    noprefix = true
