@@ -45,3 +45,4 @@ pc.stdout.log
 .gradle
 build
 .metals
+.bloop
