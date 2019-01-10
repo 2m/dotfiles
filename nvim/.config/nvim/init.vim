@@ -22,6 +22,7 @@ Plug 'benmills/vimux'
 Plug 'tpope/vim-unimpaired'
 Plug 'w0rp/ale'
 Plug 'idris-hackers/idris-vim'
+Plug 'lambdalisue/suda.vim'
 
 call plug#end()
 
@@ -64,3 +65,9 @@ filetype plugin on
 
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au WinEnter,BufWinEnter __vial_* let w:airline_disabled=1
+
+" for vimdiff
+nnoremap <silent> <leader>dp V:diffput<cr>
+nnoremap <silent> <leader>dg V:diffget<cr>
+nnoremap <silent> <leader>df :call DiffToggle()<CR>
+nmap <silent> <leader>du :wincmd w<cr>:normal u<cr>:wincmd w<cr>
