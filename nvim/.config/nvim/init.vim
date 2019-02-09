@@ -6,8 +6,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb'
 Plug 'codeindulgence/vim-tig'
 Plug 'derekwyatt/vim-scala'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'eugen0329/vim-esearch'
@@ -23,11 +21,20 @@ Plug 'tpope/vim-unimpaired'
 Plug 'w0rp/ale'
 Plug 'idris-hackers/idris-vim'
 Plug 'lambdalisue/suda.vim'
+Plug 'mcchrish/nnn.vim'
 
 call plug#end()
 
 let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
 
+let g:esearch = {
+  \ 'adapter':          'ag',
+  \ 'backend':          'nvim',
+  \ 'out':              'win',
+  \ 'batch_size':       1000,
+  \ 'use':              ['visual', 'hlsearch', 'last'],
+  \ 'default_mappings': 1,
+  \}
 let g:esearch#out#win#open = 'enew'
 
 set background=dark
@@ -41,7 +48,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 let g:rainbow_active = 1 
 
-nmap ,, :NERDTreeFind<CR>
 nmap <C-w> :bd<CR>
    
 let g:ale_linters = {'rust': ['rls', 'cargo'], 'scala': ['sbtserver']}
