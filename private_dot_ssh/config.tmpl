@@ -1,1 +1,1 @@
-{{ (index (secretJSON "show" "--fixed-strings" "--expand-multi" "--json" "config/ssh") 0).note }}
+{{ (index (secretJSON "show" "--sync=no" "--fixed-strings" "--expand-multi" "--json" "config/ssh") 0).note }}
