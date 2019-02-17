@@ -1,0 +1,1 @@
+/home/martynas/.sbt/1.0/credentials.sbt
