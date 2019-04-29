@@ -13,7 +13,6 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
 
-local lain = require("lain")
 local shortcuts = require("widgets/shortcuts")
 
 -- {{{ Error handling
@@ -48,8 +47,6 @@ beautiful.init(awful.util.get_themes_dir() .. "zenburn/theme.lua")
 local theme = beautiful.get()
 theme.tasklist_disable_icon = true
 
-theme.lain_icons         = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
-theme.layout_centerfair  = theme.lain_icons .. "centerfairw.png"
 theme.useless_gap        = 2
 
 -- This is used later as the default terminal and editor to run.
@@ -66,9 +63,8 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.floating,
-    lain.layout.termfair.center,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.tile.left
+    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.top
 }
 -- }}}
 
