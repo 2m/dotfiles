@@ -1,0 +1,5 @@
+destDir = "/home/martynas"
+sourceDir = ".local/share/chezmoi/home"
+
+[genericSecret]
+command = "lpass"

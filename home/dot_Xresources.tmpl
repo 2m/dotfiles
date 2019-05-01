@@ -1,0 +1,13 @@
+XTerm*selectToClipboard: true
+Xterm*saveLines: 100000
+
+! make meta key work on emacs
+XTerm*metaSendsEscape: true
+
+xscreensaver.newLoginCommand: awesome-client "awesome.quit()"
+
+{{- if eq .chezmoi.hostname "donata" }}
+
+Xft.dpi: 196.0
+Xcursor.theme: Capitaine
+{{- end }}
