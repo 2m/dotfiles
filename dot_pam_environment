@@ -1,0 +1,18 @@
+# Scale applications like qutebrowser
+QT_SCALE_FACTOR DEFAULT=2
+GDK_SCALE       DEFAULT=2
+GDK_DPI_SCALE   DEFAULT=0.5
+EDITOR          DEFAULT=nvim
+LPASS_PINENTRY  DEFAULT=/usr/bin/pinentry-curses
+CHROOT          DEFAULT=${HOME}/chroot
+
+ANDROID_HOME    DEFAULT=@{HOME}/Android/Sdk
+GOPATH          DEFAULT=@{HOME}/.local/share/gopath
+
+LOCAL_BIN       DEFAULT=@{HOME}/.local/bin
+CARGO_BIN       DEFAULT=@{HOME}/.cargo/bin
+GOPATH_BIN      DEFAULT=${GOPATH}/bin
+ANDROID_P_BIN   DEFAULT=${ANDROID_HOME}/platform-tools
+ANDROID_T_BIN   DEFAULT=${ANDROID_HOME}/tools/bin
+
+PATH            DEFAULT=${LOCAL_BIN}:${CARGO_BIN}:${GOPATH_BIN}:${ANDROID_P_BIN}:${ANDROID_T_BIN}:/usr/local/sbin:/usr/local/bin:/usr/bin
