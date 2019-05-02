@@ -46,3 +46,4 @@ pc.stdout.log
 build
 .metals
 .bloop
+.vscode
