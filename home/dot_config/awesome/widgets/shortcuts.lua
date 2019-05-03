@@ -20,7 +20,7 @@ shortcuts.add_to_global_keys = function(global_keys)
         awful.key({ }, "XF86AudioLowerVolume",  function () awful.spawn.easy_async({"amixer", "set", "Master", "9%-"}, function() end) end),
         awful.key({ }, "XF86AudioMute",         function () awful.spawn.easy_async({"amixer", "sset", "Master", "toggle"}, function() end) end),
 
-        awful.key({ modkey }, "r",         function () awful.spawn.easy_async({"rofi", "-dpi", "196", "-combi-modi", "window,drun,ssh", "-theme", "solarized", "-font", "fira code 10", "-show", "combi"}, function() end) end)
+        awful.key({ modkey }, "r",         function () awful.spawn.easy_async({"rofi", "-dpi", "196", "-modi", "combi", "-theme", "solarized", "-font", "fira code 10", "-show", "combi"}, function() end) end)
     )
 end
 

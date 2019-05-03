@@ -31,7 +31,6 @@ RUNNING_PID
 *.egg-info
 ENV
 dist
-bin
 application.log
 *.class
 *.sjsir
