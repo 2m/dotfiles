@@ -1,7 +1,6 @@
 # Scale applications like qutebrowser
 QT_SCALE_FACTOR DEFAULT=2
-GDK_SCALE       DEFAULT=2
-GDK_DPI_SCALE   DEFAULT=0.5
+GDK_BACKEND     DEFAULT=wayland
 EDITOR          DEFAULT=nvim
 LPASS_PINENTRY  DEFAULT=/usr/bin/pinentry-curses
 CHROOT          DEFAULT=${HOME}/chroot
