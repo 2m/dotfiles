@@ -5,6 +5,9 @@ EDITOR          DEFAULT=nvim
 LPASS_PINENTRY  DEFAULT=/usr/bin/pinentry-curses
 CHROOT          DEFAULT=${HOME}/chroot
 
+# Java Swing fix for Wayland rendering
+_JAVA_AWT_WM_NONREPARENTING DEFAULT=1
+
 ANDROID_HOME    DEFAULT=@{HOME}/Android/Sdk
 GOPATH          DEFAULT=@{HOME}/.local/share/gopath
 
