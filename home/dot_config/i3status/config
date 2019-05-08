@@ -1,0 +1,23 @@
+general {
+  output_format = "none"
+  colors = true
+  interval = 1
+}
+
+order += "wireless wlp58s0"
+order += "battery 0"
+order += "tztime local"
+
+wireless wlp58s0 {
+  format_up = "%quality (%essid) %ip"
+  format_down = "Off"
+}
+
+battery 0 {
+  format = "%status %percentage"
+  integer_battery_capacity = true
+}
+
+tztime local {
+  format = "%m-%d %H:%M"
+}
