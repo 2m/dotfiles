@@ -4,9 +4,16 @@ general {
   interval = 1
 }
 
+order += "volume master"
 order += "wireless wlp58s0"
 order += "battery 0"
 order += "tztime local"
+
+volume master {
+  format = "♪ %volume"
+  format_muted = "♪ muted (%volume)"
+  device = "pulse"
+}
 
 wireless wlp58s0 {
   format_up = "%quality (%essid) %ip"

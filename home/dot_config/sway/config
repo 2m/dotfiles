@@ -184,6 +184,18 @@ input "1:1:AT_Translated_Set_2_keyboard" {
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 #
+# Multimedia:
+#
+    bindsym XF86AudioMute exec amixer sset Master toggle
+    bindsym XF86AudioLowerVolume exec amixer set Master 9%-
+    bindsym XF86AudioRaiseVolume exec amixer set Master 9%+
+#
+# LCD
+#
+    bindsym XF86MonBrightnessDown exec light -U 5%
+    bindsym XF86MonBrightnessUp exec light -A 5%
+
+#
 # Resizing containers:
 #
 mode "resize" {
@@ -225,5 +237,8 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+# window border with no title bar
+default_border pixel 2
 
 include /etc/sway/config.d/*
