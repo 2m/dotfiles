@@ -17,7 +17,7 @@ set $right l
 set $term alacritty -e tmux-attach-or-new
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu rofi -dpi 96 -modi combi -theme solarized -font "fira code 10" -show combi
+set $menu rofi -show combi
 
 ### Output configuration
 #
@@ -240,5 +240,7 @@ bar {
 
 # window border with no title bar
 default_border pixel 2
+
+exec mako
 
 include /etc/sway/config.d/*
