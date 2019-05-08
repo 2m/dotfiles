@@ -1,2 +1,9 @@
-#!/usr/bin/env bash
-xscreensaver-command -lock
+#!/bin/bash
+# Adapted from https://thomas-leister.de/en/sway-window-manager/#lockscreen
+
+IMAGE=/tmp/screen.png
+
+grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') $IMAGE
+convert $IMAGE -scale 25% -blur 0x2 -scale 400% -fill black -colorize 50% $IMAGE
+
+swaylock -s fill -i $IMAGE
