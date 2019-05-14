@@ -1,9 +1,15 @@
 #!/bin/bash
-# Adapted from https://thomas-leister.de/en/sway-window-manager/#lockscreen
+# Adapted to multiscreen from https://thomas-leister.de/en/sway-window-manager/#lockscreen
 
-IMAGE=/tmp/screen.png
+lock_images=""
 
-grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') $IMAGE
-convert $IMAGE -scale 25% -blur 0x2 -scale 400% -fill black -colorize 50% $IMAGE
+for output in $(swaymsg -t get_outputs | jq -r '.[] | .name')
+do
+  grim -o $output /tmp/screen-$output.png
+  convert /tmp/screen-$output.png -scale 25% -blur 0x2 -scale 400% -fill black -colorize 50% /tmp/screen-$output.png
+  lock_images+="-i $output:/tmp/screen-$output.png "
+done
 
-swaylock -s fill -i $IMAGE
+swaylock -s fill $lock_images
+
+rm /tmp/screen-*.png
