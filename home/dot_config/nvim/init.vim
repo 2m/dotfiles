@@ -66,8 +66,6 @@ set signcolumn=yes
 " Some server have issues with backup files, see #649
 set nobackup
 set nowritebackup
-" Better display for messages
-set cmdheight=2
 " Use <c-space> for trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 " Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
