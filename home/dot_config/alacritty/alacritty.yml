@@ -170,6 +170,7 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+# color_start
 # Colors (Tomorrow Night Bright)
 colors:
   # Default colors
@@ -247,6 +248,7 @@ colors:
   #   `- { index: 16, color: '0xff00ff' }`
   #
   indexed_colors: []
+# color_end
 
 # Visual Bell
 #
