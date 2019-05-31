@@ -21,7 +21,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'idris-hackers/idris-vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'mcchrish/nnn.vim'
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 call plug#end()
 
