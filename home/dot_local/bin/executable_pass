@@ -1,0 +1,2 @@
+#!/bin/env fish
+lpass show --sync=no --password (lpass ls --sync=no --format "%au@%an [id: %ai]" | rofi -dmenu -p account | awk '{print $(NF)}' | sed 's/\]//g') | wl-copy

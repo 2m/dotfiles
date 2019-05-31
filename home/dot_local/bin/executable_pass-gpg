@@ -1,0 +1,3 @@
+#!/bin/env fish
+lpass show --sync=no --notes (lpass ls --sync=no --format "%aN [id: %ai]" | grep gpg | rofi -dmenu -p account | awk '{print $(NF)}' | sed 's/\]//g') | wl-copy
+
