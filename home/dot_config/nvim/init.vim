@@ -121,3 +121,17 @@ nnoremap <silent> <leader>dp V:diffput<cr>
 nnoremap <silent> <leader>dg V:diffget<cr>
 nnoremap <silent> <leader>df :call DiffToggle()<CR>
 nmap <silent> <leader>du :wincmd w<cr>:normal u<cr>:wincmd w<cr>
+
+" workaround for wayland screen flickering when browsing directory
+let g:clipboard = {
+  \   'name': 'myClipboard',
+  \   'copy': {
+  \      '+': 'tmux load-buffer -',
+  \      '*': 'tmux load-buffer -',
+  \    },
+  \   'paste': {
+  \      '+': 'tmux save-buffer -',
+  \      '*': 'tmux save-buffer -',
+  \   },
+  \   'cache_enabled': 1,
+  \ }
