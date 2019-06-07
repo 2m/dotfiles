@@ -254,4 +254,7 @@ default_border pixel 2
 
 exec mako
 
+# workaround for Xwayland changing DPI after monitor hotplug
+exec xrdb -load ~/.Xresources
+
 include /etc/sway/config.d/*
