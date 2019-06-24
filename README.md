@@ -1,13 +1,27 @@
 Use [`chezmoi`](https://github.com/twpayne/chezmoi) to apply dotfiles from this repository onto your system.
 
-For dotfiles in user home directory use:
+## Installation on a clean system
+
+Install `chezmoi` and `lastpass-cli`:
 
 ```sh
-chezmoi -c chezmoi-home.toml ...
+yay -S chezmoi lpass
 ```
 
-For system-wide configuration files use:
+Clone this repo to the chezmoi data directory:
 
 ```sh
-chezmoi -c chezmoi-root.toml ...
+git clone https://github.com/2m/dotfiles ~/.local/share/chezmoi/
+```
+
+Apply home configuration:
+
+```sh
+chezmoi -c ~/.local/share/chezmoi/chezmoi-home.toml apply
+```
+
+Apply system configuration:
+
+```sh
+sudo chezmoi -c ~/.local/share/chezmoi/chezmoi-root.toml apply
 ```
