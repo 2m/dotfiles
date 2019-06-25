@@ -3,3 +3,9 @@ sourceDir = ".local/share/chezmoi/home"
 
 [genericSecret]
 command = "lpass"
+
+[data.vars.donata]
+wireless = "wlp58s0"
+
+[data.vars.marea]
+wireless = "wlp2s0"
