@@ -6,3 +6,5 @@ classpathTypes += "maven-plugin"
 
 import com.typesafe.sbt.SbtPgp.autoImport._
 useGpg := true
+
+bloopExportJarClassifiers in Global := Some(Set("sources"))
