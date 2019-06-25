@@ -6,6 +6,12 @@ command = "lpass"
 
 [data.vars.donata]
 wireless = "wlp58s0"
+touchpad = "1739:30383:DLL075B:01_06CB:76AF_Touchpad"
+keyboard = "1:1:AT_Translated_Set_2_keyboard"
+screen = "3200x1800@60Hz position 600,1800 scale 1.6"
 
 [data.vars.marea]
 wireless = "wlp2s0"
+touchpad = "1267:12454:ELAN0406:00_04F3:30A6_Touchpad"
+keyboard = "5426:581:Razer_Razer_Blade_Keyboard"
+screen = "1920x1080@240Hz position 0,0 scale 1.0"
