@@ -3,3 +3,9 @@ sourceDir = ".local/share/chezmoi/root"
 
 [genericSecret]
 command = "lpass"
+
+[data.vars.donata]
+root_uuid = ""
+
+[data.vars.marea]
+root_uuid = "6062fcc2-4462-422a-9dea-33dd5b789863"
