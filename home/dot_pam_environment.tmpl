@@ -1,5 +1,5 @@
 # Scale applications like qutebrowser
-QT_SCALE_FACTOR DEFAULT=2
+QT_SCALE_FACTOR DEFAULT={{ with (index .vars .chezmoi.hostname) }}{{ .scale_factor }}{{ end }}
 GDK_BACKEND     DEFAULT=wayland
 EDITOR          DEFAULT=nvim
 LPASS_PINENTRY  DEFAULT=/usr/bin/pinentry-curses
