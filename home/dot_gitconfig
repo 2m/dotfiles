@@ -20,6 +20,13 @@
     old = red bold
     new = green bold
     whitespace = red reverse
+    commit = yellow bold
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
 
 [color "status"]
     added = yellow
@@ -55,10 +62,16 @@
     excludesfile = /home/martynas/.gitignore_global
     commentchar = ";"
     editor = "nvim"
+    pager = diff-so-fancy | less --tabs=4 -RFX
 
 [commit]
     gpgsign = true
+
 [hub]
     protocol = ssh
+
 [diff]
     noprefix = true
+
+[diff-so-fancy]
+    markEmptyLines = false
