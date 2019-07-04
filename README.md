@@ -11,7 +11,7 @@ yay -S chezmoi lpass
 Clone this repo to the chezmoi data directory:
 
 ```sh
-git clone https://github.com/2m/dotfiles ~/.local/share/chezmoi/
+git clone git@github.com:2m/dotfiles.git ~/.local/share/chezmoi/
 ```
 
 Apply home configuration:
