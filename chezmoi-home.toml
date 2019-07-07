@@ -21,6 +21,9 @@ scale_factor = "1"
 [data.vars.fortuna]
 wireless = "enp6s0"
 touchpad = "1267:12454:ELAN0406:00_04F3:30A6_Touchpad"
-keyboard = "5426:581:Razer_Razer_Blade_Keyboard"
-screen = "2560x1440@144Hz position 0,0 scale 1.0"
+keyboard = "1:1:AT_Translated_Set_2_keyboard"
+screen = [
+  "output DP-1 resolution 2560x1440@143.856003Hz position 1080,0 scale 1.0",
+  "output DP-2 resolution 1920x1080@60Hz position 0,0 scale 1.0 transform 270"
+]
 scale_factor = "1"
