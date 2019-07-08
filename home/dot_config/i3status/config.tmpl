@@ -20,7 +20,7 @@ volume master {
 }
 
 {{- with (index .vars .chezmoi.hostname) }}
-{{- if (index . "wireless") }}
+{{ if (index . "wireless") }}
 wireless {{ .wireless }} {
   format_up = "%quality (%essid) %ip"
   format_down = "Off"
