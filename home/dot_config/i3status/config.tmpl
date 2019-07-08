@@ -5,10 +5,8 @@ general {
 }
 
 order += "volume master"
-{{- with (index .vars .chezmoi.hostname) }}
-{{- if (index . "wireless") }}
-order += "wireless {{ .wireless }}"
-{{- end }}
+{{- with (index (index .vars .chezmoi.hostname) "wireless") }}
+order += "wireless {{ . }}"
 {{- end }}
 order += "battery 0"
 order += "tztime local"
@@ -19,13 +17,11 @@ volume master {
   device = "pulse"
 }
 
-{{- with (index .vars .chezmoi.hostname) }}
-{{ if (index . "wireless") }}
-wireless {{ .wireless }} {
+{{ with (index (index .vars .chezmoi.hostname) "wireless") -}}
+wireless {{ . }} {
   format_up = "%quality (%essid) %ip"
   format_down = "Off"
 }
-{{- end }}
 {{- end }}
 
 battery 0 {
