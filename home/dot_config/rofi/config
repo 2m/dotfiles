@@ -1,4 +1,4 @@
 rofi.location: 6
-rofi.modi:     combi
+rofi.modi:     drun
 rofi.theme:    Monokai
 rofi.font:     Fira Code 10
