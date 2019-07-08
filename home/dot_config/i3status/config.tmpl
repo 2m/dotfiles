@@ -5,9 +5,9 @@ general {
 }
 
 order += "volume master"
-{{- with (index (index .vars .chezmoi.hostname) "wireless") }}
+{{ with (index (index .vars .chezmoi.hostname) "wireless") -}}
 order += "wireless {{ . }}"
-{{- end }}
+{{ end -}}
 order += "battery 0"
 order += "tztime local"
 
@@ -22,7 +22,8 @@ wireless {{ . }} {
   format_up = "%quality (%essid) %ip"
   format_down = "Off"
 }
-{{- end }}
+
+{{ end -}}
 
 battery 0 {
   format = "%status %percentage"
