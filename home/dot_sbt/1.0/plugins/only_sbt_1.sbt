@@ -5,7 +5,7 @@ libraryDependencies ++= {
   if (!sbtVersion.value.startsWith("1.3")) {
     val sbtV = (sbtBinaryVersion in pluginCrossBuild).value
     val scalaV = (scalaBinaryVersion in update).value
-    Seq(Defaults.sbtPluginExtra("io.get-coursier" % "sbt-coursier" % "1.1.0-M14-4+20-6be594e5+20190626-1606-SNAPSHOT", sbtV, scalaV))
+    Seq(Defaults.sbtPluginExtra("io.get-coursier" % "sbt-coursier" % "2.0.0-RC2-1", sbtV, scalaV))
   }
   else Seq.empty
 }
