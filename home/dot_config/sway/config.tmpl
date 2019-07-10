@@ -73,6 +73,7 @@ input "{{ with (index .vars .chezmoi.hostname) }}{{ .touchpad }}{{ end }}" {
 input "{{ with (index .vars .chezmoi.hostname) }}{{ .keyboard }}{{ end }}" {
   xkb_layout us,lt
   xkb_options grp:caps_toggle
+  xkb_numlock enabled
 }
 
 ### Key bindings
