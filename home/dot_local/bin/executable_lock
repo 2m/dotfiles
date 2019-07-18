@@ -10,6 +10,6 @@ do
   lock_images+="-i $output:/tmp/screen-$output.png "
 done
 
-swaylock -s fill $lock_images
+swaylock -f -s fill $lock_images
 
 rm /tmp/screen-*.png
