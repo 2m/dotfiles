@@ -51,6 +51,8 @@ exec swayidle -w \
        resume 'swaymsg "output * dpms on"' \
  before-sleep 'lock'
 
+for_window [app_id=".*"] inhibit_idle fullscreen
+
 ### Input configuration
 #
 # Example configuration:
@@ -257,16 +259,21 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    font pango:DejaVu Sans Mono, FontAwesome 10
     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command i3status
+    status_command i3status-rs ~/.config/i3/status.toml
 
     colors {
-        statusline #ffffff
+        separator #666666
         background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        statusline #323232
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
     }
 }
 

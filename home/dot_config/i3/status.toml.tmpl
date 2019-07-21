@@ -1,0 +1,35 @@
+[theme]
+name = "plain"
+[theme.overrides]
+idle_bg = "#323232"
+separator_bg = "#323232"
+idle_fg = "#ffffff"
+
+[icons]
+name = "awesome"
+
+[[block]]
+block = "focused_window"
+max_width = 120
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "keyboard_layout"
+driver = "localebus"
+
+{{ with (index (index .vars .chezmoi.hostname) "network") -}}
+[[block]]
+block = "net"
+device = "{{ . }}"
+ip = true
+speed_up = false
+speed_down = false
+
+{{ end -}}
+
+[[block]]
+block = "time"
+interval = 60
+format = "%Y-%m-%d %H:%M"

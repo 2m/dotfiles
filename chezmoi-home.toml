@@ -9,7 +9,7 @@ command = "lpass"
   args = ["-d", "-u", "NONE"]
 
 [data.vars.donata]
-wireless = "wlp58s0"
+network = "wlp58s0"
 touchpad = "1739:30383:DLL075B:01_06CB:76AF_Touchpad"
 keyboard = "1:1:AT_Translated_Set_2_keyboard"
 screen = [
@@ -18,7 +18,7 @@ screen = [
 scale_factor = "2"
 
 [data.vars.marea]
-wireless = "wlp2s0"
+network = "wlp2s0"
 touchpad = "1267:12454:ELAN0406:00_04F3:30A6_Touchpad"
 keyboard = "5426:581:Razer_Razer_Blade_Keyboard"
 screen = [
@@ -27,7 +27,7 @@ screen = [
 scale_factor = "1"
 
 [data.vars.fortuna]
-ethernet = "enp6s0"
+network = "enp6s0"
 touchpad = "1267:12454:ELAN0406:00_04F3:30A6_Touchpad"
 keyboard = "1:1:AT_Translated_Set_2_keyboard"
 screen = [
