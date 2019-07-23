@@ -22,6 +22,9 @@ block = "sound"
 block = "keyboard_layout"
 driver = "localebus"
 
+[[block]]
+block = "battery"
+
 {{ with (index (index .vars .chezmoi.hostname) "network") -}}
 [[block]]
 block = "net"
