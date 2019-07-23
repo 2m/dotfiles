@@ -215,8 +215,8 @@ input "{{ with (index .vars .chezmoi.hostname) }}{{ .keyboard }}{{ end }}" {
 # Multimedia:
 #
     bindsym XF86AudioMute exec amixer sset Master toggle
-    bindsym XF86AudioLowerVolume exec amixer set Master 9%-
-    bindsym XF86AudioRaiseVolume exec amixer set Master 9%+
+    bindsym XF86AudioLowerVolume exec amixer set Master 1%-
+    bindsym XF86AudioRaiseVolume exec amixer set Master 1%+
 #
 # LCD
 #
