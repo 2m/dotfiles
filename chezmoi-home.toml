@@ -16,6 +16,7 @@ screen = [
   "output eDP-1 resolution 3200x1800@60Hz position 600,1800 scale 1.6"
 ]
 scale_factor = "2"
+laptop = true
 
 [data.vars.marea]
 network = "wlp2s0"
@@ -25,6 +26,7 @@ screen = [
   "output eDP-1 resolution 1920x1080@240Hz position 0,0 scale 1.0"
 ]
 scale_factor = "1"
+laptop = true
 
 [data.vars.fortuna]
 network = "enp6s0"
@@ -36,3 +38,4 @@ screen = [
   "output HDMI-A-1 disable"
 ]
 scale_factor = "1"
+laptop = false
