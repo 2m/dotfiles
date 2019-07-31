@@ -132,45 +132,45 @@ input "{{ with (index .vars .chezmoi.hostname) }}{{ .keyboard }}{{ end }}" {
 #
     # switch to workspace
     bindsym $mod+1 workspace 1
-    bindsym $mod+KP_1 workspace 1
     bindsym $mod+2 workspace 2
-    bindsym $mod+KP_2 workspace 2
     bindsym $mod+3 workspace 3
-    bindsym $mod+KP_3 workspace 3
     bindsym $mod+4 workspace 4
-    bindsym $mod+KP_4 workspace 4
     bindsym $mod+5 workspace 5
-    bindsym $mod+KP_5 workspace 5
     bindsym $mod+6 workspace 6
-    bindsym $mod+KP_6 workspace 6
     bindsym $mod+7 workspace 7
-    bindsym $mod+KP_7 workspace 7
     bindsym $mod+8 workspace 8
-    bindsym $mod+KP_8 workspace 8
     bindsym $mod+9 workspace 9
-    bindsym $mod+KP_9 workspace 9
     bindsym $mod+0 workspace 10
+    bindsym $mod+KP_1 workspace 1
+    bindsym $mod+KP_2 workspace 2
+    bindsym $mod+KP_3 workspace 3
+    bindsym $mod+KP_4 workspace 4
+    bindsym $mod+KP_5 workspace 5
+    bindsym $mod+KP_6 workspace 6
+    bindsym $mod+KP_7 workspace 7
+    bindsym $mod+KP_8 workspace 8
+    bindsym $mod+KP_9 workspace 9
     bindsym $mod+KP_0 workspace 10
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1
-    bindsym $mod+Shift+KP_End move container to workspace 1
     bindsym $mod+Shift+2 move container to workspace 2
-    bindsym $mod+Shift+KP_Down move container to workspace 2
     bindsym $mod+Shift+3 move container to workspace 3
-    bindsym $mod+Shift+KP_Next move container to workspace 3
     bindsym $mod+Shift+4 move container to workspace 4
-    bindsym $mod+Shift+KP_Left move container to workspace 4
     bindsym $mod+Shift+5 move container to workspace 5
-    bindsym $mod+Shift+KP_Begin move container to workspace 5
     bindsym $mod+Shift+6 move container to workspace 6
-    bindsym $mod+Shift+KP_Right move container to workspace 6
     bindsym $mod+Shift+7 move container to workspace 7
-    bindsym $mod+Shift+KP_Home move container to workspace 7
     bindsym $mod+Shift+8 move container to workspace 8
-    bindsym $mod+Shift+KP_Up move container to workspace 8
     bindsym $mod+Shift+9 move container to workspace 9
-    bindsym $mod+Shift+KP_Prior move container to workspace 9
     bindsym $mod+Shift+0 move container to workspace 10
+    bindsym $mod+Shift+KP_End move container to workspace 1
+    bindsym $mod+Shift+KP_Down move container to workspace 2
+    bindsym $mod+Shift+KP_Next move container to workspace 3
+    bindsym $mod+Shift+KP_Left move container to workspace 4
+    bindsym $mod+Shift+KP_Begin move container to workspace 5
+    bindsym $mod+Shift+KP_Right move container to workspace 6
+    bindsym $mod+Shift+KP_Home move container to workspace 7
+    bindsym $mod+Shift+KP_Up move container to workspace 8
+    bindsym $mod+Shift+KP_Prior move container to workspace 9
     bindsym $mod+Shift+KP_Insert move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
