@@ -58,6 +58,9 @@
 
     sub = submodule update --init --recursive
 
+    # show unpushed branches
+    unpushed = log --branches --not --remotes --no-walk --decorate --oneline
+
 [core]
     excludesfile = /home/martynas/.gitignore_global
     commentchar = ";"
