@@ -1,5 +1,3 @@
-# Scale applications like qutebrowser
-QT_SCALE_FACTOR DEFAULT={{ with (index .vars .chezmoi.hostname) }}{{ .scale_factor }}{{ end }}
 EDITOR          DEFAULT=nvim
 LPASS_PINENTRY  DEFAULT=/usr/bin/pinentry-curses
 CHROOT          DEFAULT=${HOME}/chroot

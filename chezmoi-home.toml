@@ -15,7 +15,6 @@ keyboard = "1:1:AT_Translated_Set_2_keyboard"
 screen = [
   "output eDP-1 resolution 3200x1800@60Hz position 600,1800 scale 1.6"
 ]
-scale_factor = "2"
 laptop = true
 
 [data.vars.marea]
@@ -25,7 +24,6 @@ keyboard = "5426:581:Razer_Razer_Blade_Keyboard"
 screen = [
   "output eDP-1 resolution 1920x1080@240Hz position 0,0 scale 1.0"
 ]
-scale_factor = "1"
 laptop = true
 
 [data.vars.fortuna]
@@ -37,5 +35,4 @@ screen = [
   "output DVI-I-1 resolution 1920x1080@60Hz position 0,0 scale 1.0 transform 270",
   "output DP-1 disable"
 ]
-scale_factor = "1"
 laptop = false
