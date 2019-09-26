@@ -33,9 +33,9 @@ network = "enp6s0"
 touchpad = "1267:12454:ELAN0406:00_04F3:30A6_Touchpad"
 keyboard = "1:1:AT_Translated_Set_2_keyboard"
 screen = [
-  "output DP-1 resolution 2560x1440@143.856003Hz position 1080,0 scale 1.0",
-  "output DP-2 resolution 1920x1080@60Hz position 0,0 scale 1.0 transform 270",
-  "output HDMI-A-1 disable"
+  "output HDMI-A-1 resolution 2560x1440@119.998001Hz position 1080,0 scale 1.0",
+  "output DVI-I-1 resolution 1920x1080@60Hz position 0,0 scale 1.0 transform 270",
+  "output DP-1 disable"
 ]
 scale_factor = "1"
 laptop = false
