@@ -11,4 +11,4 @@ root_param = "/dev/mapper/cryptroot cryptdevice=UUID=b224f0fb-acd4-4872-8c97-72b
 root_param = "/dev/mapper/cryptroot cryptdevice=UUID=a5be4c00-e4a8-4681-b766-5eb1112180fa:cryptroot"
 
 [data.vars.fortuna]
-root_param = "PARTUUID=6d216b40-32a7-4b60-b53d-5386b7ad028f"
+root_param = "UUID=6f6653ad-13eb-4333-81d9-259424920669"
