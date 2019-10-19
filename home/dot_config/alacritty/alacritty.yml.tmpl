@@ -130,7 +130,10 @@ font:
     #style: Italic
 
   # Point size
-  size: 10.0
+  size:
+{{- with (index (index .vars .chezmoi.hostname) "terminal_font_size") }} {{ . -}}
+{{ else }} 10.0
+{{- end }}
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -315,10 +318,14 @@ live_config_reload: true
 # Default:
 #   - (Linux/macOS) /bin/bash --login
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
+shell:
+  program:
+{{- with (index (index .vars .chezmoi.hostname) "shell") }} {{ . -}}
+{{ else }} /usr/bin/fish
+{{- end }}
+  args:
+    - -c
+    - tmux-attach-or-new
 
 # Windows 10 ConPTY backend (Windows only)
 #

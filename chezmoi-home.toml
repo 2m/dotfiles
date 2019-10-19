@@ -38,5 +38,6 @@ screen = [
 laptop = false
 
 [data.vars.laguna]
-terminal_font_size = 13
+terminal_font_size = "13.0"
 pinentry = "/usr/local/bin/pinentry-curses"
+shell = "/usr/local/bin/fish"
