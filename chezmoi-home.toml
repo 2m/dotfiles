@@ -1,4 +1,4 @@
-destDir = "/home/martynas"
+destDir = "."
 sourceDir = ".local/share/chezmoi/home"
 
 [genericSecret]
@@ -36,3 +36,6 @@ screen = [
   "output DP-1 disable"
 ]
 laptop = false
+
+[data.vars.laguna]
+terminal_font_size = 13
