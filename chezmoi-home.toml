@@ -39,3 +39,4 @@ laptop = false
 
 [data.vars.laguna]
 terminal_font_size = 13
+pinentry = "/usr/local/bin/pinentry-curses"

@@ -1,0 +1,7 @@
+pinentry-program 
+{{- with (index (index .vars .chezmoi.hostname) "pinentry") }} {{ . -}}
+{{ else }} /usr/bin/pinentry-curses
+{{- end }}
+
+default-cache-ttl 14400
+max-cache-ttl 14400
