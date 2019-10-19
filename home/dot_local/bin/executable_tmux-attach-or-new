@@ -2,7 +2,7 @@
 
 session=$(tmux list-sessions | grep -v attached | cut -d: -f1 | head -n 1)
 if [ -z "$session" ]; then
-  tmux
+  tmux -u
 else
-  tmux attach -t $session
+  tmux -u attach -t $session
 fi
