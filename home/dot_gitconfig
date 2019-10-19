@@ -62,7 +62,7 @@
     unpushed = log --branches --not --remotes --no-walk --decorate --oneline
 
 [core]
-    excludesfile = /home/martynas/.gitignore_global
+    excludesfile = ~/.gitignore_global
     commentchar = ";"
     editor = "nvim"
     pager = diff-so-fancy | less --tabs=4 -RFX
