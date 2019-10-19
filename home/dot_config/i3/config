@@ -30,7 +30,7 @@ font pango:Fira Code 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -e tmux-attach-or-new
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
