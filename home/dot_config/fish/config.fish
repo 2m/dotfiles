@@ -8,6 +8,7 @@ fundle plugin '2m/fish-exa-aliases'
 fundle plugin '2m/fish-gpg-tty'
 fundle plugin '2m/fish-archlinux-java'
 fundle plugin 'docker/cli' --path 'contrib/completion/fish'
+fundle plugin '2m/fish-history-merge'
 
 fundle init
 
