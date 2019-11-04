@@ -46,3 +46,4 @@ build
 .metals
 .bloop
 .vscode
+local.toml
