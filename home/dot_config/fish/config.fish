@@ -12,6 +12,8 @@ fundle plugin '2m/fish-history-merge'
 
 fundle init
 
+set PATH ~/soft/google-cloud-sdk/bin/ $PATH
+
 function fish_user_key_bindings
   fzf_key_bindings
 end
