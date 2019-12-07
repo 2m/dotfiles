@@ -13,7 +13,9 @@ network = "wlp58s0"
 touchpad = "1739:30383:DLL075B:01_06CB:76AF_Touchpad"
 keyboard = "1:1:AT_Translated_Set_2_keyboard"
 screen = [
-  "output eDP-1 resolution 3200x1800@60Hz position 600,1800 scale 1.6"
+  "output eDP-1 resolution 3200x1800@60Hz position 840,2160 scale 1.6",
+  "output DP-1 resolution 3840x2160@59.997002Hz position 0,0 scale 1"
+
 ]
 laptop = true
 
