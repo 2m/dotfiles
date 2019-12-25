@@ -18,6 +18,7 @@ screen = [
 
 ]
 laptop = true
+dpi = "166.0"
 
 [data.vars.marea]
 network = "wlp2s0"

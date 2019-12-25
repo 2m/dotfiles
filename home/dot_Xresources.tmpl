@@ -8,6 +8,9 @@ xscreensaver.newLoginCommand: awesome-client "awesome.quit()"
 
 {{- if eq .chezmoi.hostname "donata" }}
 
-Xft.dpi: 96.0
+Xft.dpi:
+{{- with (index (index .vars .chezmoi.hostname) "dpi") }} {{ . -}}
+{{ else }} 96.0
+{{- end }}
 Xcursor.theme: Capitaine
 {{- end }}
