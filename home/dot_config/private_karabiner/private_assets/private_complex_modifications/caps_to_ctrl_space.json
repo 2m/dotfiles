@@ -1,0 +1,27 @@
+{
+  "title": "Map caps lock to ctrl+space",
+  "rules": [
+    {
+      "description": "Map caps lock to ctrl+space",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": "left_control"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

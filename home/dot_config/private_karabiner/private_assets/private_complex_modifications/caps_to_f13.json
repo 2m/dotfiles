@@ -1,0 +1,24 @@
+{
+  "title": "Map caps lock to f13",
+  "rules": [
+    {
+      "description": "Map caps lock to f13",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "f13"
+          }
+        }
+      ]
+    }
+  ]
+}

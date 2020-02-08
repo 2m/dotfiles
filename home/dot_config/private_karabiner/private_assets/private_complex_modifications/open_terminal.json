@@ -1,0 +1,29 @@
+{
+  "title": "Open Applications",
+  "rules": [
+    {
+      "description": "Open Alacritty",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -n '/Applications/Alacritty.app'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
