@@ -12,7 +12,11 @@ fundle plugin '2m/fish-history-merge'
 
 fundle init
 
-set PATH ~/soft/google-cloud-sdk/bin/ $PATH
+set -gx PATH $PATH $HOME/soft/google-cloud-sdk/bin/
+{{- if eq .chezmoi.hostname "laguna" }}
+set -gx PATH $PATH $HOME/.krew/bin
+set -gx PATH $PATH "$HOME/Library/Application Support/Coursier/bin"
+{{- end }}
 
 function fish_user_key_bindings
   fzf_key_bindings
