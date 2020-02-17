@@ -32,6 +32,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+# copy gpg passphrase to clipboard
+bindsym $mod+g exec bash -c 'lpass show --sync=no --notes gpg/{{ .chezmoi.hostname }} --clip'
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
