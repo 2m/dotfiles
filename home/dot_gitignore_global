@@ -49,3 +49,4 @@ build
 .vscode
 local.toml
 node_modules
+metals.sbt
