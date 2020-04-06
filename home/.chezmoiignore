@@ -1,0 +1,4 @@
+{{- if ne .chezmoi.hostname "laguna" }}
+# ignore MacOS specific files
+Library
+{{- end }}
