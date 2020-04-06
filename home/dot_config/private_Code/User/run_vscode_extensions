@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+code --list-extensions | sort --ignore-case > extensions
