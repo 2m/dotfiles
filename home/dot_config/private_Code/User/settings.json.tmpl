@@ -1,0 +1,19 @@
+{
+    "editor.codeLens": false,
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+{{- with (index (index .vars .chezmoi.hostname) "java_home") }}
+    "metals.javaHome": "{{ . }}",
+{{- end }}
+    "python.formatting.provider": "black",
+    "problems.showCurrentInStatus": true,
+    "search.useGlobalIgnoreFiles": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Gruvbox Dark (Soft)"
+}

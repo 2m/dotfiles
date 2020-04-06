@@ -39,8 +39,10 @@ screen = [
   "output DP-1 disable"
 ]
 laptop = false
+java_home = "/usr/lib/jvm/java-11-adoptopenjdk"
 
 [data.vars.laguna]
 terminal_font_size = "13.0"
 pinentry = "/usr/local/bin/pinentry-curses"
 shell = "/usr/local/bin/fish"
+java_home = "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
