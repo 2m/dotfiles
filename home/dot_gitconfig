@@ -67,7 +67,7 @@
 [core]
     excludesfile = ~/.gitignore_global
     commentchar = ";"
-    editor = "nvim"
+    editor = nvim
     pager = diff-so-fancy | less --tabs=4 -RFX
 
 [commit]
