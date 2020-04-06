@@ -30,7 +30,7 @@ screen = [
 laptop = true
 
 [data.vars.fortuna]
-network = "enp6s0"
+network = "enp7s0"
 touchpad = "1267:12454:ELAN0406:00_04F3:30A6_Touchpad"
 keyboard = "1:1:AT_Translated_Set_2_keyboard"
 screen = [
