@@ -33,7 +33,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # copy gpg passphrase to clipboard
-bindsym $mod+g exec bash -c 'lpass show --sync=no --notes gpg/{{ .chezmoi.hostname }} --clip'
+bindsym $mod+g exec alacritty --class floating --command bash -c 'lpass show --sync=no --notes gpg/$(hostname) | head -c -1 | cb'
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -210,3 +210,5 @@ default_border pixel 2
 
 bindsym XF86MonBrightnessDown exec light -U 5%
 bindsym XF86MonBrightnessUp exec light -A 5%
+
+for_window [instance="floating"] floating enable
