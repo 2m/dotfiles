@@ -208,6 +208,10 @@ bar {
 # window border with no title bar
 default_border pixel 2
 
+bindsym XF86AudioMute exec amixer sset Master toggle
+bindsym XF86AudioLowerVolume exec amixer set Master 1%-
+bindsym XF86AudioRaiseVolume exec amixer set Master 1%+
+
 bindsym XF86MonBrightnessDown exec light -U 5%
 bindsym XF86MonBrightnessUp exec light -A 5%
 
