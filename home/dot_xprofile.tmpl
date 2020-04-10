@@ -13,3 +13,6 @@ xrandr --output DP-2 --mode 2560x1440 --rate 144 --primary \
 
 setxkbmap -layout us,lt -option grp:caps_toggle
 nitrogen --restore &
+{{- if eq .chezmoi.hostname "donata" }}
+picom &
+{{- end }}

@@ -49,7 +49,7 @@ FILES=()
 #
 ##   NOTE: If you have /usr on a separate partition, you MUST include the
 #    usr, fsck and shutdown hooks.
-HOOKS=(base udev encrypt autodetect keyboard keymap consolefont modconf block lvm2 filesystems fsck)
+HOOKS=({{ with (index .vars .chezmoi.hostname) }}{{ .module_hooks }}{{ end }})
 
 # COMPRESSION
 # Use this to compress the initramfs image. By default, gzip compression

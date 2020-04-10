@@ -6,6 +6,7 @@ command = "lpass"
 
 [data.vars.donata]
 root_param = "/dev/mapper/cryptroot cryptdevice=UUID=b224f0fb-acd4-4872-8c97-72b13d748510:cryptroot"
+module_hooks = "base udev encrypt autodetect modconf block filesystems keyboard fsck"
 
 [data.vars.marea]
 root_param = "/dev/mapper/cryptroot cryptdevice=UUID=a5be4c00-e4a8-4681-b766-5eb1112180fa:cryptroot"
