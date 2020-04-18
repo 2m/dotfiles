@@ -1,10 +1,20 @@
 {
+    "cSpell.userWords": [
+        "archlinux",
+        "difftools",
+        "gitter",
+        "mirrorlist",
+        "pkgbuild"
+    ],
     "editor.codeLens": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.suggestSelection": "first",
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git.enableSmartCommit": true,
     "java.configuration.checkProjectSettingsExclusions": false,
 {{- with (index (index .vars .chezmoi.hostname) "java_home") }}
     "metals.javaHome": "{{ . }}",
