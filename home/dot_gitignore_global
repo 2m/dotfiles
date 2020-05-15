@@ -39,7 +39,6 @@ application.log
 hs_err_pid*
 .ensime*
 venv
-.env
 ensime-langserver.log
 pc.stdout.log
 .gradle
