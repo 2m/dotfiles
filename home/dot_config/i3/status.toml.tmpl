@@ -21,7 +21,7 @@ block = "sound"
 
 [[block]]
 block = "keyboard_layout"
-driver = "localebus"
+driver = "kbddbus"
 
 {{ with (index (index .vars .chezmoi.hostname) "laptop") -}}
 [[block]]
