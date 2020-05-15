@@ -1,3 +1,4 @@
+ban.spellright
 BenFradet.vscode-unison
 bungcip.better-toml
 casualjim.gotemplate
@@ -11,7 +12,6 @@ scala-lang.scala
 scalameta.metals
 serayuzgur.crates
 skyapps.fish-vscode
-streetsidesoftware.code-spell-checker
 tomphilbin.gruvbox-themes
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
