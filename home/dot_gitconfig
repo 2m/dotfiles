@@ -35,7 +35,7 @@
 
 [alias]
     st = status -sb
-    ci = commit
+    ci = commit -m
     cia = commit -a -m
     ciaa = commit -a --amend
     co = checkout
