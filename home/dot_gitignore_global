@@ -35,6 +35,7 @@ application.log
 *.class
 *.sjsir
 *.pyc
+.mypy_cache/
 /akka-diagnostics
 hs_err_pid*
 .ensime*
