@@ -4,4 +4,5 @@ Library
 {{ else }}
 # ignore Linux specific files
 .config/i3
+.xprofile
 {{- end }}
