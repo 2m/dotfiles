@@ -4,5 +4,46 @@
         "key": "ctrl+q",
         "mac": "cmd+q",
         "command": "-workbench.action.quit"
+    },
+    // control characters from https://en.wikipedia.org/wiki/ASCII#ASCII_control_characters
+    {
+        "key": "cmd+a",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0001"
+        }
+    },
+    {
+        "key": "cmd+c",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0003"
+        }
+    },
+    {
+        "key": "cmd+e",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0005"
+        }
+    },
+    {
+        "key": "cmd+u",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0015"
+        }
+    },
+    {
+        "key": "cmd+w",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0017"
+        }
     }
 ]
