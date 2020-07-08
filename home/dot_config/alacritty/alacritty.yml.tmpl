@@ -456,6 +456,14 @@ key_bindings:
   #- { key: Q,      mods: Command, action: Quit             }
   #- { key: W,      mods: Command, action: Quit             }
 
+  # Bind control characters to Command+... combination
+  # https://en.wikipedia.org/wiki/ASCII#ASCII_control_characters
+  - { key: A,      mods: Command, chars: "\x01"            }
+  - { key: C,      mods: Command, chars: "\x03"            }
+  - { key: E,      mods: Command, chars: "\x05"            }
+  - { key: U,      mods: Command, chars: "\x15"            }
+  - { key: W,      mods: Command, chars: "\x17"            }
+
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
   - { key: L,        mods: Control, action: ClearLogNotice                   }
