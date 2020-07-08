@@ -1,6 +1,6 @@
 # open terminal
-cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e tmux-attach-or-new
-shift + cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e fish
+ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e tmux-attach-or-new
+shift + ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e fish
 
 # copy gpg passphrase to clipboard
-cmd - g : /Applications/Alacritty.app/Contents/MacOS/alacritty -e lpass show --sync=no --notes gpg/master --clip
+ctrl - g : /Applications/Alacritty.app/Contents/MacOS/alacritty -e lpass show --sync=no --notes gpg/master --clip
