@@ -450,7 +450,9 @@ key_bindings:
   #- { key: Minus,  mods: Command, action: DecreaseFontSize }
   #- { key: K,      mods: Command, action: ClearHistory     }
   #- { key: K,      mods: Command, chars: "\x0c"            }
-  - { key: V,      mods: Command|Shift, action: Paste            }
+  - { key: V,      mods: Command|Shift, action: Paste       }
+  - { key: Left,   mods: Command,       chars: "\x1b[1;5D"  }
+  - { key: Right,  mods: Command,       chars: "\x1b[1;5C"  }
   #- { key: C,      mods: Command, action: Copy             }
   #- { key: H,      mods: Command, action: Hide             }
   #- { key: Q,      mods: Command, action: Quit             }
