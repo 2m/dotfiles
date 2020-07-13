@@ -129,4 +129,10 @@
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward"
     },
+    // paste into terminal with shift as well
+    {
+        "key": "cmd+shift+v",
+        "command": "workbench.action.terminal.paste",
+        "when": "terminalFocus"
+    },
 ]
