@@ -1,6 +1,8 @@
 {{- if ne .chezmoi.hostname "laguna" }}
 # ignore MacOS specific files
 Library
+.skhdrc
+.config/karabiner/
 {{ else }}
 # ignore Linux specific files
 .config/i3
