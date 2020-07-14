@@ -59,6 +59,25 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Launch mission control",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "mission_control"
+                                },
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
