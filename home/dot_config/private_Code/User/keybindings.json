@@ -23,6 +23,14 @@
         }
     },
     {
+        "key": "cmd+d",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0004"
+        }
+    },
+    {
         "key": "cmd+e",
         "when": "terminalFocus",
         "command": "workbench.action.terminal.sendSequence",
