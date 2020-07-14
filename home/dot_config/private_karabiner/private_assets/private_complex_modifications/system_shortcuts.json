@@ -1,0 +1,28 @@
+{
+  "title": "System Shortcuts",
+  "rules": [
+    {
+      "description": "Map cmd+h to cmd+option+f",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "f",
+            "modifiers": [
+              "left_command",
+              "left_option"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
