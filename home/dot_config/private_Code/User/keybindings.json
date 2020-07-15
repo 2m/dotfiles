@@ -143,4 +143,18 @@
         "command": "workbench.action.terminal.paste",
         "when": "terminalFocus"
     },
+    // toggle focus between editor and terminal with cmd+`
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
 ]
