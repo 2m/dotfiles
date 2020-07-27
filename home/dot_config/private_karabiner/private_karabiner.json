@@ -99,7 +99,15 @@
                                 "key_code": "fn"
                             },
                             "to": {
-                                "key_code": "left_control"
+                                "key_code": "left_command"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": {
+                                "key_code": "fn"
                             }
                         },
                         {
@@ -107,7 +115,15 @@
                                 "key_code": "left_control"
                             },
                             "to": {
-                                "key_code": "fn"
+                                "key_code": "left_option"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": {
+                                "key_code": "left_control"
                             }
                         }
                     ]
@@ -269,6 +285,86 @@
                     },
                     "to": {
                         "key_code": "non_us_backslash"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_1"
+                    },
+                    "to": {
+                        "key_code": "1"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_2"
+                    },
+                    "to": {
+                        "key_code": "2"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_3"
+                    },
+                    "to": {
+                        "key_code": "3"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_4"
+                    },
+                    "to": {
+                        "key_code": "4"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_5"
+                    },
+                    "to": {
+                        "key_code": "5"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_6"
+                    },
+                    "to": {
+                        "key_code": "6"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_7"
+                    },
+                    "to": {
+                        "key_code": "7"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_8"
+                    },
+                    "to": {
+                        "key_code": "8"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_9"
+                    },
+                    "to": {
+                        "key_code": "9"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "keypad_0"
+                    },
+                    "to": {
+                        "key_code": "0"
                     }
                 }
             ],
