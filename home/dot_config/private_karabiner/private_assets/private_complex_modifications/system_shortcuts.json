@@ -42,6 +42,181 @@
           }
         }
       ]
+    },
+    {
+      "description": "Map control+number/lt-letter to control+keypad",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_1",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_2",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_3",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_4",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "5",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_5",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "6",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_6",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_7",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "8",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_8",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "9",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_9",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "keypad_0",
+            "modifiers": [
+              "left_control"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
