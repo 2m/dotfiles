@@ -3,7 +3,7 @@ ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e tmux-att
 shift + ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e fish
 
 # copy gpg passphrase to clipboard
-ctrl - g : /Applications/Alacritty.app/Contents/MacOS/alacritty -e lpass show --sync=no --notes gpg/master --clip
+ctrl - g : /Applications/Alacritty.app/Contents/MacOS/alacritty --title gpg-copy -e lpass show --sync=no --notes gpg/master --clip
 
 # yabai
 ctrl + shift - r : bash -c 'launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"'
@@ -13,8 +13,8 @@ ctrl - l : yabai -m window --focus next || yabai -m window --focus first
 #ctrl - j : yabai -m window --focus south
 #ctrl - k : yabai -m window --focus north
 
-ctrl - b : yabai -m window --insert south
-ctrl - v : yabai -m window --insert east
+ctrl - v : yabai -m window --insert south
+ctrl - b : yabai -m window --insert east
 
 ctrl - 0x53 : yabai -m space --focus 1
 ctrl - 0x54 : yabai -m space --focus 2
