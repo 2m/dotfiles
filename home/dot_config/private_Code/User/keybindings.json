@@ -66,9 +66,12 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+left",
-        "command": "-cursorWordStartLeft",
-        "when": "textInputFocus"
+        "key": "cmd+left",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b[1;5D"
+        }
     },
     {
         "key": "shift+cmd+left",
@@ -97,6 +100,14 @@
         "when": "textInputFocus"
     },
     {
+        "key": "cmd+right",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b[1;5C"
+        }
+    },
+    {
         "key": "shift+cmd+right",
         "command": "-cursorEndSelect",
         "when": "textInputFocus"
@@ -111,6 +122,7 @@
         "command": "-cursorWordEndRightSelect",
         "when": "textInputFocus"
     },
+    // navigation across history
     {
         "key": "cmd+[",
         "command": "-editor.action.outdentLines",
