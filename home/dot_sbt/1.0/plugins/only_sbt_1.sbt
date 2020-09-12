@@ -1,7 +1,7 @@
 resolvers += Resolver.bintrayRepo("jypma", "maven") // for ts-reaktive
 
 libraryDependencies ++= {
-  if (!sbtVersion.value.startsWith("1.3")) {
+  if (!sbtVersion.value.startsWith("1.")) {
     val sbtV = (sbtBinaryVersion in pluginCrossBuild).value
     val scalaV = (scalaBinaryVersion in update).value
     Seq(
