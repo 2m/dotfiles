@@ -2,6 +2,8 @@ ban.spellright
 BenFradet.vscode-unison
 bungcip.better-toml
 casualjim.gotemplate
+eamodio.gitlens
+golang.go
 lunaryorn.fish-ide
 ms-azuretools.vscode-docker
 ms-python.python
@@ -20,4 +22,3 @@ vscjava.vscode-java-dependency
 vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
-waderyan.gitblame
