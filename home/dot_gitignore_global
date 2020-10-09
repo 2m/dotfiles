@@ -50,3 +50,4 @@ build
 local.toml
 node_modules
 metals.sbt
+.bsp
