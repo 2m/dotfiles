@@ -6,5 +6,6 @@ Library
 {{ else }}
 # ignore Linux specific files
 .config/i3
+.config/sway
 .xprofile
 {{- end }}
