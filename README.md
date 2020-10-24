@@ -5,7 +5,8 @@ Use [`chezmoi`](https://github.com/twpayne/chezmoi) to apply dotfiles from this 
 Install `chezmoi` and `lastpass-cli`:
 
 ```sh
-yay -S chezmoi lpass
+yay -S chezmoi lpass              # Arch Linux
+brew install chezmoi lastpass-cli # MacOs
 ```
 
 Clone this repo to the chezmoi data directory:

@@ -1,5 +1,5 @@
 # open terminal
-ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e tmux-attach-or-new
+ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 shift + ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e fish
 
 # copy gpg passphrase to clipboard
