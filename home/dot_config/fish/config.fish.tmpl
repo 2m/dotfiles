@@ -3,7 +3,7 @@ if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
 fundle plugin 'jethrokuan/fzf'
 fundle plugin 'oh-my-fish/theme-mtahmed'
 fundle plugin '2m/fish-tmux-gitbar'
-fundle plugin 'ogham/exa' --path 'contrib'
+fundle plugin 'ogham/exa' --path 'completions'
 fundle plugin '2m/fish-exa-aliases'
 fundle plugin '2m/fish-gpg-tty'
 fundle plugin '2m/fish-archlinux-java'
@@ -22,7 +22,3 @@ set -gx PATH $PATH $HOME/.local/bin
 set -gx PATH $PATH $HOME/go/bin
 set -gx PATH $PATH /Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.0.0/Contents/Home/bin
 {{- end }}
-
-function fish_user_key_bindings
-  fzf_key_bindings
-end
