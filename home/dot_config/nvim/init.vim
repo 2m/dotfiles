@@ -74,3 +74,5 @@ let g:clipboard = {
   \   },
   \   'cache_enabled': 1,
   \ }
+
+:set number relativenumber
