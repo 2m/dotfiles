@@ -5,6 +5,9 @@ shift + ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e 
 # copy gpg passphrase to clipboard
 ctrl - g : /Applications/Alacritty.app/Contents/MacOS/alacritty --title gpg-copy -e lpass show --sync=no --notes gpg/master --clip
 
+# open project
+ctrl - space : ls ~/projects/ | choose | xargs -I % echo ~/projects/% | xargs code
+
 # yabai
 ctrl + shift - r : bash -c 'launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"'
 
