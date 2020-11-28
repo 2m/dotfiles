@@ -3,6 +3,7 @@
 Library
 .skhdrc
 .config/karabiner/
+.config/yabai
 {{ else }}
 # ignore Linux specific files
 .config/i3
