@@ -1,0 +1,6 @@
+configuration {
+	modi: "drun";
+	font: "Fira Code 10";
+	location: 6;
+	theme: "Monokai";
+}
