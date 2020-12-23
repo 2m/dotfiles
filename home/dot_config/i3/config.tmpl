@@ -38,6 +38,9 @@ bindsym $mod+g exec alacritty --class floating --command bash -c 'lpass show --s
 # copy screen selection to clipboard
 bindsym --release Print exec scrot --select --exec 'xclip -selection clipboard -target image/png -i $f' '/tmp/%F_%T_$wx$h.png'
 
+# show project open window
+bindsym $mod+p exec ls ~/projects/ | rofi -dpi 1 -dmenu | xargs -I % echo ~/projects/% | xargs code
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
