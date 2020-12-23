@@ -33,10 +33,7 @@ block = "battery"
 [[block]]
 block = "net"
 device = "{{ . }}"
-ssid = true
-ip = true
-speed_up = false
-speed_down = false
+format = "{ssid} {ip}"
 
 {{ end -}}
 
