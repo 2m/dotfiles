@@ -8,5 +8,6 @@ Library
 # ignore Linux specific files
 .config/i3
 .config/sway
+.config/rofi
 .xprofile
 {{- end }}
