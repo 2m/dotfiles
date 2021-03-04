@@ -85,4 +85,6 @@
 [pull]
     rebase = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[rerere]
+    enabled = true
