@@ -9,5 +9,6 @@ Library
 .config/i3
 .config/sway
 .config/rofi
+.pam_environment
 .xprofile
 {{- end }}
