@@ -1,7 +1,7 @@
 destDir = "."
 sourceDir = ".local/share/chezmoi/home"
 
-[genericSecret]
+[secret]
 command = "lpass"
 
 [merge]
