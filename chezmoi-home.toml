@@ -8,6 +8,9 @@ command = "lpass"
   command = "nvim"
   args = ["-d", "-u", "NONE"]
 
+[diff]
+  exclude = ["scripts"]
+
 [data.vars.donata]
 network = "wlp58s0"
 touchpad = "1739:30383:DLL075B:01_06CB:76AF_Touchpad"
