@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>lt.dvim.yabai</string>
+
+    <key>KeepAlive</key>
+    <dict>
+        <key>OtherJobEnabled</key>
+	<string>homebrew.mxcl.yabai</string>
+
+	<key>SuccessfulExit</key>
+	<string>false</string>
+    </dict>
+
+    <key>StandardErrorPath</key>
+    <string>/usr/local/var/log/yabai/yabai-scala.err.log</string>
+
+    <key>StandardOutPath</key>
+    <string>/usr/local/var/log/yabai/yabai-scala.out.log</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/martynas/Library/Application Support/yabai-scala</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/sh</string>
+      <string>Yabai.scala</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string><![CDATA[/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin]]></string>
+    </dict>
+
+  </dict>
+</plist>
