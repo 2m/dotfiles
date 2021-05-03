@@ -68,7 +68,10 @@
     excludesfile = ~/.gitignore_global
     commentchar = ";"
     editor = nvim
-    pager = diff-so-fancy | less --tabs=4 -RFX
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
 
 [commit]
     gpgsign = true
@@ -82,6 +85,19 @@
 [diff-so-fancy]
     markEmptyLines = false
     stripLeadingSymbols = false
+
+[delta]
+    features = line-numbers decorations
+    syntax-theme = gruvbox-dark
+    whitespace-error-style = 22 reverse
+    plus-style = "syntax #4f754c"
+    minus-style = "syntax #754c4c"
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+
 [pull]
     rebase = true
 [init]
