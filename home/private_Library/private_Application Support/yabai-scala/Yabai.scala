@@ -1,14 +1,14 @@
 // 2> /dev/null \
 /*
-scala_version="3.0.0-RC3"
+scala_version="3.0.0"
 dependencies="
-  lt.dvim.yabai:yabai-scala_3.0.0-RC3:1.0.2+11-36b48b06-SNAPSHOT
+  lt.dvim.yabai:yabai-scala_3:2.0.1
 "
 repositories="
   sonatype:public
   sonatype:snapshots
 "
-source $(curl -sL git.io/boot-tsk | sh)
+source $(curl -sL raw.githubusercontent.com/2m/tsk-tsk/trunk/boot-tsk#latest | sh)
 run
 exit
  */
