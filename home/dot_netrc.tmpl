@@ -6,6 +6,10 @@ machine api-sandbox.develop.argyle.io
 login martynas@argyle.io
 password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
 
+machine localhost-dev-staff
+login martynas@argyle.io
+password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
+
 machine api.argyle.io
 login martynas@argyle.io
 password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io") 0).password }}
