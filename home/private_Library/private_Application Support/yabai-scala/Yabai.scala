@@ -4,11 +4,7 @@ scala_version="3.0.0"
 dependencies="
   lt.dvim.yabai:yabai-scala_3:2.0.1
 "
-repositories="
-  sonatype:public
-  sonatype:snapshots
-"
-source $(curl -sL raw.githubusercontent.com/2m/tsk-tsk/trunk/boot-tsk#latest | sh)
+source $(curl -sL https://git.io/boot-tsk | sh)
 run
 exit
  */
