@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+set -o pipefail
+
+project=$(ls ~/projects/ | rofi -dpi 1 -dmenu | xargs -I % echo ~/projects/%)
+code "$project"
