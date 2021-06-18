@@ -3,6 +3,7 @@ BenFradet.vscode-unison
 bungcip.better-toml
 casualjim.gotemplate
 eamodio.gitlens
+emeraldwalk.RunOnSave
 golang.go
 lunaryorn.fish-ide
 ms-azuretools.vscode-docker
