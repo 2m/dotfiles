@@ -42,3 +42,10 @@ pinentry = "/usr/local/bin/pinentry-curses"
 shell = "/usr/local/bin/fish"
 java_home = "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
 decorations = "none"
+
+[data.vars.luana]
+terminal_font_size = "13.0"
+pinentry = "/usr/local/bin/pinentry-curses"
+shell = "/usr/local/bin/fish"
+java_home = "/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home"
+decorations = "none"
