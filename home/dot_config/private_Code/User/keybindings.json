@@ -155,6 +155,12 @@
         "command": "workbench.action.terminal.paste",
         "when": "terminalFocus"
     },
+    // copy from terminal selection with shift
+    {
+        "key": "cmd+shift+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalFocus"
+    },
     // toggle focus between editor and terminal with cmd+`
     {
         "key": "ctrl+`",
