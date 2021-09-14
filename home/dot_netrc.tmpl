@@ -17,3 +17,11 @@ password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io")
 machine api-sandbox.argyle.io
 login martynas@argyle.io
 password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io") 0).password }}
+
+machine api.heroku.com
+login mmartynas@gmail.com
+password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "heroku-api-key") 0).password }}
+
+machine git.heroku.com
+login mmartynas@gmail.com
+password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "heroku-api-key") 0).password }}
