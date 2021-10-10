@@ -18,5 +18,6 @@ ANDROID_T_BIN   DEFAULT=${ANDROID_HOME}/tools/bin
 SNAP_BIN        DEFAULT=/var/lib/snapd/snap/bin
 NPM_BIN         DEFAULT=@{HOME}/.npm-packages/bin
 COURSIER_BIN    DEFAULT=@{HOME}/.local/share/coursier/bin
+NIX_BIN         DEFAULT=/nix/var/nix/profiles/default/bin
 
-PATH            DEFAULT=${LOCAL_BIN}:${CARGO_BIN}:${GOPATH_BIN}:${ANDROID_P_BIN}:${ANDROID_T_BIN}:${SNAP_BIN}:${NPM_BIN}:${COURSIER_BIN}:/usr/local/sbin:/usr/local/bin:/usr/bin
+PATH            DEFAULT=${LOCAL_BIN}:${CARGO_BIN}:${GOPATH_BIN}:${ANDROID_P_BIN}:${ANDROID_T_BIN}:${SNAP_BIN}:${NPM_BIN}:${COURSIER_BIN}:${NIX_BIN}:/usr/local/sbin:/usr/local/bin:/usr/bin
