@@ -5,7 +5,9 @@ bungcip.better-toml
 casualjim.gotemplate
 eamodio.gitlens
 emeraldwalk.RunOnSave
+GitHub.vscode-pull-request-github
 golang.go
+hashicorp.terraform
 lunaryorn.fish-ide
 ms-azuretools.vscode-docker
 ms-python.python
