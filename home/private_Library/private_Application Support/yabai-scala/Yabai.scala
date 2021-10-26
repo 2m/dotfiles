@@ -20,7 +20,9 @@ import scala.language.implicitConversions
 
   // Query for app names and title of running apps with:
   // yabai -m query --windows | jq '.[] | {app: .app, title: .title}'
-  yabai no_manage (Rule.App("choose"), Rule.App("System Preferences"), Rule.Title("gpg-copy"))
+  yabai no_manage (Rule.App("choose"), Rule.App("System Preferences"), Rule.Title("gpg-copy"), Rule.App(
+    "QuickTime Player"
+  ), Rule.App("iMovie"))
 
   yabai window_topmost on
   yabai window_gap 2
