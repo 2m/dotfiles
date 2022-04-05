@@ -44,6 +44,6 @@ import scala.language.implicitConversions
 
   yabai window_opacity on
   yabai active_window_opacity 1.0
-  yabai normal_window_opacity 0.9
+  yabai normal_window_opacity 1.0 
 
   yabai window_border off
