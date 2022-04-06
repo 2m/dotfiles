@@ -1,13 +1,4 @@
-// 2> /dev/null \
-/*
-scala_version="3.0.0"
-dependencies="
-  lt.dvim.yabai:yabai-scala_3:2.0.1
-"
-source $(curl -sL https://git.io/boot-tsk | sh)
-run
-exit
- */
+//> using lib "lt.dvim.yabai::yabai-scala:2.0.1"
 
 import lt.dvim.yabai.*
 
