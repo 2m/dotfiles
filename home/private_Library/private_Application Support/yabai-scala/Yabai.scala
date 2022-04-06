@@ -2,8 +2,6 @@
 
 import lt.dvim.yabai.*
 
-import scala.language.implicitConversions
-
 @main def run() =
   for {
     _ <- (yabai.spaces.max until 10)
