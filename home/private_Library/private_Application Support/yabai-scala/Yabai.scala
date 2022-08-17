@@ -11,7 +11,7 @@ import lt.dvim.yabai.*
   // yabai -m query --windows | jq '.[] | {app: .app, title: .title}'
   yabai no_manage (Rule.App("choose"), Rule.App("System Preferences"), Rule.Title("gpg-copy"), Rule.App(
     "QuickTime Player"
-  ), Rule.App("iMovie"))
+  ), Rule.App("iMovie"), Rule.App("java"), Rule.App("zoom.us"))
 
   yabai window_topmost on
   yabai window_gap 2
