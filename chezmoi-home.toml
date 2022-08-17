@@ -36,16 +36,9 @@ screen = [
 laptop = false
 java_home = "/usr/lib/jvm/java-11-adoptopenjdk"
 
-[data.vars.laguna]
-terminal_font_size = "13.0"
-pinentry = "/usr/local/bin/pinentry-curses"
-shell = "/usr/local/bin/fish"
-java_home = "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
-decorations = "none"
-
 [data.vars.luana]
 terminal_font_size = "13.0"
 pinentry = "/usr/local/bin/pinentry-curses"
 shell = "/usr/local/bin/fish"
-java_home = "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"
+java_home = "/Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home"
 decorations = "none"
