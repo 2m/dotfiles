@@ -16,7 +16,8 @@ import lt.dvim.yabai.*
     Rule.App("QuickTime Player"),
     Rule.App("iMovie"),
     Rule.App("java"),
-    Rule.App("zoom.us")
+    Rule.App("zoom.us"),
+    Rule.Title("Discord Updater"),
   )
 
   yabai window_topmost on
