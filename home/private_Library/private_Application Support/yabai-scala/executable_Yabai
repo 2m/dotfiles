@@ -1,4 +1,6 @@
-//> using lib "lt.dvim.yabai::yabai-scala:2.0.1"
+#!/usr/bin/env -S scala-cli shebang -S 3
+
+//> using dep "lt.dvim.yabai::yabai-scala:2.0.1"
 
 import lt.dvim.yabai.*
 
