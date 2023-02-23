@@ -1,14 +1,14 @@
-{{- if ne .chezmoi.hostname "zeta" }}
-# ignore MacOS specific files
-Library
-.skhdrc
-.config/karabiner/
-.config/yabai
-{{ else }}
+{{- if contains .chezmoi.hostname "luana,zeta" }}
 # ignore Linux specific files
 .config/i3
 .config/sway
 .config/rofi
 .pam_environment
 .xprofile
+{{ else }}
+# ignore MacOS specific files
+Library
+.skhdrc
+.config/karabiner/
+.config/yabai
 {{- end }}
