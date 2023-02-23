@@ -1,7 +1,9 @@
 [user]
     email = self@2m.lt
     name = Martynas Mickevičius
-    signingkey = E735DF276C508071
+{{- with (index (index .vars .chezmoi.hostname) "git_signingkey") }}
+    signingkey = {{ . }}
+{{- end }}
 
 [push]
     default = simple
