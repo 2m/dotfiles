@@ -14,21 +14,18 @@ fundle init
 
 set -x BUF_TOKEN {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
 
-{{- if eq .chezmoi.hostname "luana" }}
-set -gx PATH $PATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
-set -gx PATH $PATH /usr/local/sbin
-set -gx PATH $PATH /usr/local/bin
-set -gx PATH $PATH $HOME/.krew/bin
-set -gx PATH $PATH "$HOME/Library/Application Support/Coursier/bin"
-set -gx PATH $PATH $HOME/.local/bin
-set -gx PATH $PATH $HOME/go/bin
-set -gx PATH $PATH /Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.2.0/Contents/Home/bin
-set -gx PATH $PATH $HOME/Library/Python/3.9/bin
-set -gx PATH $PATH $HOME/.cargo/bin
-set -gx PATH $PATH $HOME/.npm-packages/bin
-set -gx PATH $PATH /Applications/Tailscale.app/Contents/MacOS
-set -gx PATH $PATH /usr/local/opt/influxdb@1/bin
-
-set -gx GRPC_PYTHON_BUILD_SYSTEM_ZLIB true
-set -gx SYSTEM_VERSION_COMPAT 1
+{{- if eq .chezmoi.os "darwin" }}
+fish_add_path /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
+fish_add_path /usr/local/sbin
+fish_add_path /usr/local/bin
+fish_add_path ~/.krew/bin
+fish_add_path "~/Library/Application Support/Coursier/bin"
+fish_add_path ~/.local/bin
+fish_add_path ~/go/bin
+fish_add_path /Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.2.0/Contents/Home/bin
+fish_add_path ~/Library/Python/3.9/bin
+fish_add_path ~/.cargo/bin
+fish_add_path ~/.npm-packages/bin
+fish_add_path /Applications/Tailscale.app/Contents/MacOS
+fish_add_path /usr/local/opt/influxdb@1/bin
 {{- end }}
