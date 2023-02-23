@@ -43,9 +43,8 @@ login mmartynas@gmail.com
 password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "heroku-api-key") 0).password }}
 
 machine buf.build
-login developers
-password {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
-
+  login developers
+  password {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
 machine go.buf.build
-login developers
-password {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
+  login developers
+  password {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
