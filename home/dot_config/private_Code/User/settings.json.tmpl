@@ -36,7 +36,9 @@
     "spellright.language": [
         "en_US"
     ],
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+{{- with (index (index .vars .chezmoi.hostname) "shell") }}
+    "terminal.integrated.shell.osx": "{{ . }}",
+{{- end }}
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Gruvbox Dark (Soft)",

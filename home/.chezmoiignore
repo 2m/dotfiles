@@ -1,4 +1,4 @@
-{{- if ne .chezmoi.hostname "luana" }}
+{{- if ne .chezmoi.hostname "zeta" }}
 # ignore MacOS specific files
 Library
 .skhdrc

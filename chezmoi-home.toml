@@ -23,6 +23,7 @@ screen = [
 laptop = true
 dpi = "166.0"
 java_home = "/usr/lib/jvm/java-11-adoptopenjdk"
+git_signingkey = "E735DF276C508071"
 
 [data.vars.fortuna]
 network = "enp7s0"
@@ -35,6 +36,7 @@ screen = [
 ]
 laptop = false
 java_home = "/usr/lib/jvm/java-11-adoptopenjdk"
+git_signingkey = "E735DF276C508071"
 
 [data.vars.luana]
 terminal_font_size = "13.0"
@@ -42,3 +44,12 @@ pinentry = "/usr/local/bin/pinentry-curses"
 shell = "/usr/local/bin/fish"
 java_home = "/Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home"
 decorations = "none"
+git_signingkey = "E735DF276C508071"
+
+[data.vars.zeta]
+terminal_font_size = "13.0"
+pinentry = "/opt/homebrew/bin/pinentry-curses"
+shell = "/opt/homebrew/bin/fish"
+java_home = "/Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home"
+decorations = "none"
+git_signingkey = "FBDF4337"
