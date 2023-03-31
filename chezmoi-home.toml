@@ -1,9 +1,6 @@
 destDir = "."
 sourceDir = ".local/share/chezmoi/home"
 
-[secret]
-command = "lpass"
-
 [merge]
   command = "nvim"
   args = ["-d", "-u", "NONE"]
@@ -45,3 +42,11 @@ shell = "/opt/homebrew/bin/fish"
 java_home = "/Users/martynas/.jabba/jdk/openjdk@1.17.0/Contents/Home"
 decorations = "none"
 git_signingkey = "FBDF4337"
+
+[data.vars.carla]
+terminal_font_size = "13.0"
+pinentry = "/opt/homebrew/bin/pinentry-curses"
+shell = "/opt/homebrew/bin/fish"
+java_home = "/Users/martynas/.jabba/jdk/openjdk@1.17.0/Contents/Home"
+decorations = "none"
+git_signingkey = "CBA412CC"

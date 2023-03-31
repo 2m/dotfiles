@@ -3,7 +3,7 @@ ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 shift + ctrl - return : /Applications/Alacritty.app/Contents/MacOS/alacritty -e fish
 
 # copy gpg passphrase to clipboard
-ctrl - g : op item get --account PCFMRRLQ5FDIJPGQJTIEYJ7UZ4 '{{ .chezmoi.hostname }}' --fields notesPlain | pbcopy
+ctrl - g : op read op://gpg/{{ .chezmoi.hostname }}/notesPlain | pbcopy
 
 # open project
 ctrl - p : ls ~/projects/ | choose | xargs -I % echo ~/projects/% | xargs code

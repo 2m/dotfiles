@@ -1,50 +1,14 @@
-machine api.develop.argyle.io
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
-
-machine api-sandbox.develop.argyle.io
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
-
-machine api.develop.argyle.com
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
-
-machine api-sandbox.develop.argyle.com
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
-
-machine localhost-dev-staff
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "develop.argyle.io") 0).password }}
-
-machine api.argyle.io
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io") 0).password }}
-
-machine api-sandbox.argyle.io
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io") 0).password }}
-
-machine api.argyle.com
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io") 0).password }}
-
-machine api-sandbox.argyle.com
-login martynas@argyle.io
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "argyle.io") 0).password }}
-
 machine api.heroku.com
 login mmartynas@gmail.com
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "heroku-api-key") 0).password }}
+password {{ onepasswordRead "op://Private/heroku-api-key/password" }}
 
 machine git.heroku.com
 login mmartynas@gmail.com
-password {{ (index (secretJSON "show" "--sync=no" "--pass" "--json" "heroku-api-key") 0).password }}
+password {{ onepasswordRead "op://Private/heroku-api-key/password" }}
 
 machine buf.build
   login developers
-  password {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
+  password {{ onepasswordRead "op://tokens/buf/notesPlain" }}
 machine go.buf.build
   login developers
-  password {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
+  password {{ onepasswordRead "op://tokens/buf/notesPlain" }}

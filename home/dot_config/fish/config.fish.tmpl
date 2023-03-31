@@ -12,7 +12,7 @@ fundle plugin '2m/fish-efibootmgr'
 
 fundle init
 
-set -x BUF_TOKEN {{ (index (secretJSON "show" "--sync=no" "--json" "tokens/buf") 0).note }}
+set -x BUF_TOKEN {{ onepasswordRead "op://tokens/buf/notesPlain" }}
 
 {{- if eq .chezmoi.os "darwin" }}
 fish_add_path /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
