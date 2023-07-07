@@ -1,5 +1,5 @@
 [theme]
-name = "plain"
+theme = "plain"
 [theme.overrides]
 idle_bg = "#323232"
 info_bg = "#323232"
@@ -10,11 +10,12 @@ critical_bg = "#323232"
 idle_fg = "#ffffff"
 
 [icons]
-name = "awesome"
+icons = "awesome4"
 
 [[block]]
 block = "focused_window"
-max_width = 120
+[block.format]
+full = " $title.str(max_w:300) | "
 
 [[block]]
 block = "sound"
@@ -33,11 +34,12 @@ block = "battery"
 [[block]]
 block = "net"
 device = "{{ . }}"
-format = "{ssid} {ip}"
+format = "$ssid $ip"
 
 {{ end -}}
 
 [[block]]
 block = "time"
 interval = 60
-format = "%Y-%m-%d %H:%M"
+[block.format]
+full = " $timestamp.datetime(f:'%Y-%m-%d %R') "
