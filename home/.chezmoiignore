@@ -11,4 +11,6 @@ Library
 .config/rofi
 .pam_environment
 .xprofile
+.config/systemd
+.config/environment.d
 {{- end }}
