@@ -19,7 +19,6 @@ screen = [
 ]
 laptop = true
 dpi = "166.0"
-java_home = "/usr/lib/jvm/java-11-adoptopenjdk"
 git_signingkey = "E735DF276C508071"
 
 [data.vars.fortuna]
@@ -32,21 +31,11 @@ screen = [
   "output DP-1 disable"
 ]
 laptop = false
-java_home = "/usr/lib/jvm/java-11-adoptopenjdk"
 git_signingkey = "E735DF276C508071"
-
-[data.vars.zeta]
-terminal_font_size = "13.0"
-pinentry = "/opt/homebrew/bin/pinentry-curses"
-shell = "/opt/homebrew/bin/fish"
-java_home = "/Users/martynas/.jabba/jdk/openjdk@1.17.0/Contents/Home"
-decorations = "none"
-git_signingkey = "FBDF4337"
 
 [data.vars.carla]
 terminal_font_size = "13.0"
 pinentry = "/opt/homebrew/bin/pinentry-curses"
 shell = "/opt/homebrew/bin/fish"
-java_home = "/Users/martynas/.jabba/jdk/openjdk@1.17.0/Contents/Home"
 decorations = "none"
 git_signingkey = "CBA412CC"
