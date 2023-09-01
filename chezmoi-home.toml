@@ -20,6 +20,7 @@ screen = [
 laptop = true
 dpi = "166.0"
 git_signingkey = "E735DF276C508071"
+editor = "helix"
 
 [data.vars.fortuna]
 network = "enp7s0"
