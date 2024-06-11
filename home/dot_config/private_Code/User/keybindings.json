@@ -175,4 +175,24 @@
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
+    {
+        "key": "cmd+down",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "cmd+up",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
 ]
