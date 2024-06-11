@@ -34,7 +34,7 @@
         "en_US"
     ],
 {{- with (index (index .vars .chezmoi.hostname) "shell") }}
-    "terminal.integrated.shell.osx": "{{ . }}",
+    "terminal.integrated.defaultProfile.osx": "{{ . }}",
 {{- end }}
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.menuBarVisibility": "toggle",
@@ -62,16 +62,22 @@
     "githubPullRequests.pullBranch": "never",
     "workbench.startupEditor": "none",
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
-        "yaml": false,
         "plaintext": false,
-        "markdown": true
+        "markdown": true,
+        "scminput": false,
+        "yaml": true
     },
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
     "go.toolsManagement.autoUpdate": true,
+    "remote.SSH.remotePlatform": {
+        "eglute.local": "linux"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
 }
