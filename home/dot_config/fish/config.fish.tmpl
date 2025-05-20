@@ -1,14 +1,16 @@
-if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
+if not functions -q fundle
+    eval (curl -sfL https://git.io/fundle-install)
+end
 
-fundle plugin 'jethrokuan/fzf'
-fundle plugin 'oh-my-fish/theme-mtahmed'
-fundle plugin '2m/fish-tmux-gitbar'
-fundle plugin 'ogham/exa' --path 'completions'
-fundle plugin '2m/fish-exa-aliases'
-fundle plugin '2m/fish-gpg-tty'
-fundle plugin '2m/fish-archlinux-java'
-fundle plugin 'docker/cli' --path 'contrib/completion/fish'
-fundle plugin '2m/fish-efibootmgr'
+fundle plugin jethrokuan/fzf
+fundle plugin oh-my-fish/theme-mtahmed
+fundle plugin 2m/fish-tmux-gitbar
+fundle plugin ogham/exa --path completions
+fundle plugin 2m/fish-exa-aliases
+fundle plugin 2m/fish-gpg-tty
+fundle plugin 2m/fish-archlinux-java
+fundle plugin docker/cli --path contrib/completion/fish
+fundle plugin 2m/fish-efibootmgr
 
 fundle init
 
@@ -29,3 +31,9 @@ fish_add_path ~/.npm-packages/bin
 fish_add_path /Applications/Tailscale.app/Contents/MacOS
 fish_add_path /usr/local/opt/influxdb@1/bin
 {{- end }}
+
+if status --is-interactive
+    set -gx ATUIN_NOBIND true
+    atuin init fish | source
+    bind \cr _atuin_search
+end

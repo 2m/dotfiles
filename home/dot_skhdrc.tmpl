@@ -9,12 +9,19 @@ ctrl - g : fish -c "op read op://gpg/{{ .chezmoi.hostname }}/notesPlain | pbcopy
 ctrl - p : ls ~/projects/ | choose | xargs -I % echo ~/projects/% | xargs code
 
 # yabai
-ctrl + shift - r : bash -c 'launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"'
+ctrl + shift - r : osascript -e 'display notification "Restarting Yabai" with title "Yabai"'; yabai --stop-service; yabai --start-service; ~/Library/Application\ Support/yabai-scala/Yabai
 
-ctrl - l : yabai -m window --focus next || yabai -m window --focus first
-#ctrl - h : yabai -m window --focus west
-#ctrl - j : yabai -m window --focus south
-#ctrl - k : yabai -m window --focus north
+#ctrl - l : yabai -m window --focus next || yabai -m window --focus first
+#ctrl + shift - l : yabai -m window --swap next || yabai -m window --swap first
+
+ctrl - l : yabai -m window --focus east
+ctrl + shift - l : yabai -m window --swap east
+ctrl - h : yabai -m window --focus west
+ctrl + shift - h : yabai -m window --swap west
+ctrl - j : yabai -m window --focus south
+ctrl + shift - j : yabai -m window --swap south
+ctrl - k : yabai -m window --focus north
+ctrl + shift - k : yabai -m window --swap north
 
 ctrl - v : yabai -m window --insert south
 ctrl - b : yabai -m window --insert east
