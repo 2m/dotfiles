@@ -16,28 +16,15 @@
         "**/.ammonite": true
     },
     "git.enableSmartCommit": true,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.codeLens.enabled": false,
     "go.useLanguageServer": true,
     "java.configuration.checkProjectSettingsExclusions": false,
-    "java.semanticHighlighting.enabled": true,
-    "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
     "python.terminal.activateEnvironment": false,
     "problems.showCurrentInStatus": true,
     "search.useGlobalIgnoreFiles": true,
-    "spellright.language": [
-        "en_US"
-    ],
 {{- with (index (index .vars .chezmoi.hostname) "shell") }}
     "terminal.integrated.defaultProfile.osx": "{{ . }}",
 {{- end }}
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Gruvbox Dark (Soft)",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
@@ -80,7 +67,6 @@
         "eglute.local": "linux",
         "linux.fortuna.2m.lt": "linux"
     },
-    "github.copilot.editor.enableAutoCompletions": true,
     "nix.enableLanguageServer": true,
     "nix.serverPath": "nixd",
     "extensions.ignoreRecommendations": true,
@@ -94,7 +80,6 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "cstef.kotlin-formatter"
     },
-    "amp.tab.enabled": true,
     "editor.wordBasedSuggestions": "off",
     "github.copilot.nextEditSuggestions.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false
